@@ -1,35 +1,15 @@
-.svg-container {
-  svg {
-    width: 200%;
+.hero {
+  align-items: center;
+  background: url('../background.svg') no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  justify-content: center;
 
-    #Plan_4 {
-      animation: translate 45s linear;
-      animation-fill-mode: forwards;
-    }
-
-    #Plan_3 {
-      animation: translate 30s linear;
-      animation-fill-mode: forwards;
-    }
-
-    #Plan_2 {
-      animation: translate 11s linear;
-      animation-fill-mode: forwards;
-    }
-
-    #Plan_1 {
-      animation: translate 2s linear;
-      animation-fill-mode: forwards;
-    }
-
-    #Tracks {
-      animation: translate 7s linear;
-      animation-fill-mode: forwards;
-    }
+  h1 {
+    color: $white;
+    font-family: $roboto;
+    font-size: 30px;
   }
-}
-
-@keyframes translate {
-  0%   {transform: translateX(0px);}
-  100% {transform: translateX(-2880px);}
 }

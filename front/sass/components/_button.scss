@@ -1,0 +1,44 @@
+$box-shadow: 0 0 20px 0 rgba(0, 0, 0, .04), 0 20px 31px 0 rgba(0, 0, 0, .04);
+$box-shadow-hover: 0 0 20px 0 rgba(0, 0, 0, .04), 0 20px 31px 0 rgba(0, 0, 0, .16);
+
+// Menu Button
+
+.button-menu {
+  background: $white;
+  box-shadow: $box-shadow;
+  transition: box-shadow 1s;
+
+  &:hover {
+    background: $white !important; // Remove this fucking shit property
+    box-shadow: $box-shadow-hover; // Doesn't Work :'(
+  }
+
+  li {
+    color: $green;
+
+    .icon {
+      margin-right: 5px;
+    }
+  }
+}
+
+.button {
+  background: $white;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  font-family: $roboto;
+  font-size: 12px;
+  padding: 10px 15px;
+  transition: box-shadow .4s;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+}
+
+.big {
+  color: $green;
+  font-size: 15px;
+  margin-top: 30px;
+  padding: 20px 30px;
+}

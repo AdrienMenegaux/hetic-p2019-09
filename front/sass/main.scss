@@ -1,5 +1,21 @@
+// Colors
+$green: #92ddd0;
+$white: #fff;
+
+// Size
+$break-large: 725px;
+
+// Fonts
+$roboto: 'Roboto', sans-serif;
+
+// Global
+a {text-decoration: none}
+
 // Common
 @import 'common/reset';
+
+// Components
+@import 'components/button';
 
 // Partials
 @import 'partials/header';
