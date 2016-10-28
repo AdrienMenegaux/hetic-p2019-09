@@ -1,0 +1,48 @@
+$hover-item: rgba(0, 0, 0, .05);
+$weight-menu: 300;
+$size-menu: 14px;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 30px 20px;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+
+  .logo {
+    height: 40px;
+    width: auto;
+    @media screen and (max-width: $break-large) {
+      margin: auto;
+    }
+  }
+
+  .items {
+    align-items: center;
+    display: flex;
+
+    .item {
+      border-radius: 5px;
+      color: $white;
+      font-family: $roboto;
+      font-size: $size-menu;
+      font-weight: $weight-menu;
+      margin-right: 20px;
+      padding: 10px 15px;
+      transition: .3s background ease;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        background: $hover-item;
+      }
+      @media screen and (max-width: $break-large) {
+        display: none;
+      }
+    }
+  }
+}

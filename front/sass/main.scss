@@ -1,8 +1,40 @@
+// Colors
+$green: #92ddd0;
+$dark-green: #237469;
+$white: #fff;
+
+// Size
+$break-large: 725px;
+
+// Fonts
+$roboto: 'Roboto', sans-serif;
+
+// Global
+a {text-decoration: none}
+
 // Common
 @import 'common/reset';
+
+// Components
+@import 'components/button';
 
 // Partials
 @import 'partials/header';
 @import 'partials/footer';
 
 // Sections
+@import 'sections/intro';
+
+// Test for Reveal
+
+div {
+  height: 70vh;
+}
+
+.foo {
+  background-color: $green;
+}
+
+.bar {
+  background-color: $dark-green;
+}

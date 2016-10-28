@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/nansthomas/awwwwards/issues"
   },
-  "homepage": "https://github.com/nansthomas/awwwwards#readme"
+  "homepage": "https://github.com/nansthomas/awwwwards#readme",
+  "dependencies": {
+    "scrollreveal": "^3.3.2"
+  }
 }
