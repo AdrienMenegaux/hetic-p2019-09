@@ -1,5 +1,6 @@
 // Colors
 $green: #92ddd0;
+$dark-green: #237469;
 $white: #fff;
 
 // Size
@@ -23,3 +24,17 @@ a {text-decoration: none}
 
 // Sections
 @import 'sections/intro';
+
+// Test for Reveal
+
+div {
+  height: 70vh;
+}
+
+.foo {
+  background-color: $green;
+}
+
+.bar {
+  background-color: $dark-green;
+}

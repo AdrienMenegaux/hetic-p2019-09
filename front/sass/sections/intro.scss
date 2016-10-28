@@ -7,9 +7,13 @@
   height: 85vh;
   justify-content: center;
 
-  h1 {
-    color: $white;
-    font-family: $roboto;
-    font-size: 30px;
+  .hero-title {
+    height: auto;
+
+    h1 {
+      color: $white;
+      font-family: $roboto;
+      font-size: 30px;
+    }
   }
 }
