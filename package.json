@@ -3,20 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "watch": "./node_modules/node-sass/bin/node-sass --watch front/sass/main.scss public/src/css/app.css && webpack --watch --config webpack.config.js",
-    "dev": "./node_modules/node-sass/bin/node-sass front/sass/main.scss public/src/css/app.css && node ./node_modules/postcss/lib/postcss.js --use autoprefixer --autoprefixer.browsers '> 0%' public/src/css/app.css -d public/src/css/ && webpack --config webpack.config.js",
-    "prod": "node ./node_modules/minifier/index.js public/src/css/app.css && webpack -p --config webpack.config.js"
-  },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "babel-eslint": "^6.1.2",
+    "css-loader": "^0.26.0",
     "eslint": "^3.7.1",
     "eslint-config-airbnb-es5": "^1.1.0",
     "eslint-plugin-react": "^6.7.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
     "minifier": "^0.8.0",
     "node-sass": "^3.8.0",
     "postcss": "^5.1.2",
+    "postcss-loader": "^1.1.1",
     "sass-lint": "^1.9.1",
     "webpack": "^1.13.1"
   },

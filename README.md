@@ -18,15 +18,15 @@ On Sublime, install this package : `SublimeLinter-contrib-eslint`
 
 ## Run
 ```
-npm run dev
+webpack
 ```
 
-## Watch (SASS + JS)
+## Watch
 ```
-npm run watch
+webpack --watch
 ```
 
-## Compile for production
+## Run prod
 ```
-npm run prod
+webpack -p
 ```
