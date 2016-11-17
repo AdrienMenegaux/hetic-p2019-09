@@ -2,7 +2,10 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var autoprefixer = require('autoprefixer');
 
 module.exports = {
-  entry: './front/js/app.js',
+  debug: true,
+  entry: {
+    main: './front/js/app.js'
+  },
   output: {
       path: __dirname + '/public',
       filename: "bundle.js"
