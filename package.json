@@ -10,12 +10,15 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb-es5": "^1.1.0",
+    "eslint-plugin-react": "^6.7.1",
     "minifier": "^0.8.0",
     "node-sass": "^3.8.0",
     "postcss": "^5.1.2",
-    "webpack": "^1.13.1",
-    "eslint": "^3.7.1",
-    "sass-lint": "^1.9.1"
+    "sass-lint": "^1.9.1",
+    "webpack": "^1.13.1"
   },
   "repository": {
     "type": "git",
