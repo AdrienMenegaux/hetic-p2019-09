@@ -1,6 +1,6 @@
-# awwwwards
+# Buddytrain 🚇
 
-## Install
+## Install 🔧
 ```
 npm install
 ```
@@ -16,17 +16,17 @@ On Sublime, install this package : `SublimeLinter-contrib-eslint`
 ### For the SCSS Linter (Only Atom) 🙉
 `apm install linter-sass-lint`
 
-## Run
+## Run 🚀
 ```
 webpack
 ```
 
-## Watch
+## Watch 👀
 ```
 webpack --watch
 ```
 
-## Run prod
+## Run prod 🔥
 ```
 webpack -p
 ```
