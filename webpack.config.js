@@ -25,6 +25,14 @@ module.exports = {
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader?name=assets/img-[hash:6].[ext]'
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
       }
     ]
   },
