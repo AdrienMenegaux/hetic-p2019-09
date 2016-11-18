@@ -43,5 +43,5 @@ module.exports = {
     }),
     new ExtractTextPlugin('style.css')
   ],
-  postcss: [ autoprefixer({ browsers: ['last 3 versions'] }) ]
+  postcss: [autoprefixer({ browsers: ['> 1%'] })]
 };
