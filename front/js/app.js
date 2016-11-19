@@ -13,18 +13,16 @@ const controller = new ScrollMagic.Controller({
 // Build the Tween
 const tween = [
   TweenMax
-  .to('#title', 1, { // the statut on end trigger // A QUOI SERT LE 10
-    left: '+=200',
-  }),
-  TweenMax
-  .to('#target', 1, { // the statut on end trigger // A QUOI SERT LE 10
-    height: '80vh',
+  .to('.train', 1, {
+    transform: 'translate3d(29048px,0,0)',
+    ease: Power0.easeNone,
   }),
 ];
+
 // Build the Scene
 const scene = new ScrollMagic.Scene({
-  triggerElement: '#title2', // Start Trigger
-  duration: 300, // Distance between start and end
+  triggerElement: '.bg', // Start Trigger
+  duration: 29048, // Distance between start and end
 })
   .setTween(tween)
   .addIndicators()
