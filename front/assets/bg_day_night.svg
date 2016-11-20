@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16102px" height="510px" viewBox="0 0 16102 510" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <g id="background">
+                <rect id="DAY" fill="#92DDD0" x="0" y="0" width="16100.4" height="509.21"></rect>
+                <rect id="Rectangle-path" fill="#8AD6CB" x="0" y="99.56" width="16100.4" height="98.81"></rect>
+                <rect id="Rectangle-path" fill="#80CEC4" x="1.02" y="198.8" width="16100.4" height="157.77"></rect>
+                <path d="M1927.95,343.85 L1948.1,343.85" id="Shape" fill="#37474F"></path>
+            </g>
+            <g id="background" transform="translate(7487.000000, 0.000000)">
+                <rect id="DAY" fill="#16495A" x="0" y="0" width="8614.14396" height="509.21"></rect>
+                <rect id="Rectangle-path" fill="#2A7181" x="0" y="99.56" width="8614.14396" height="98.81"></rect>
+                <rect id="Rectangle-path" fill="#3A8696" x="0.545727239" y="198.8" width="8614.14396" height="157.77"></rect>
+                <path d="M1031.50474,343.85 L1042.28552,343.85" id="Shape" fill="#37474F"></path>
+            </g>
+        </g>
+    </g>
+</svg>
