@@ -5,25 +5,28 @@ import TweenMax from 'gsap';
 
 require('../sass/main.scss');
 
-// Init Controller
+// Init ScrollMagic Controller
 const controller = new ScrollMagic.Controller({
   vertical: false,
 });
 
-// Build the Tween
-const tween = [
-  TweenMax
-  .to('.train', 1, {
+// Create the Element Animation
+const TrainElement = TweenMax.to(
+  '.train', 1, {
     transform: 'translate3d(29048px,0,0)',
-    ease: Power0.easeNone,
-  }),
-];
+    ease: Linear.easeNone,
+  }
+);
 
 // Build the Scene
-const scene = new ScrollMagic.Scene({
-  triggerElement: '.bg', // Start Trigger
-  duration: 29048, // Distance between start and end
+const TrainScene = new ScrollMagic.Scene({
+  triggerElement: '.bg',
+  duration: 29048,
 })
-  .setTween(tween)
-  .addIndicators()
-  .addTo(controller);
+  .setTween(TrainElement)
+  .addIndicators();
+
+// Add Scenes to Controller
+controller.addScene([
+  TrainScene,
+]);
