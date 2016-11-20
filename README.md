@@ -4,6 +4,10 @@
 ```
 npm install
 ```
+then
+```
+npm install -g webpack
+```
 
 ### Install the Linter 🙈
 ```
@@ -19,6 +23,15 @@ On Sublime, install this package : `SublimeLinter-contrib-eslint`
 ## Run 🚀
 ```
 webpack
+```
+
+## Run with dev-server 👷
+```
+npm install -g webpack-dev-server
+```
+then
+```
+webpack-dev-server
 ```
 
 ## Watch 👀
