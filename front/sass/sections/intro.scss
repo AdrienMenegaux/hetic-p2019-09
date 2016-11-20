@@ -3,10 +3,35 @@
 }
 
 .train {
+  backface-visibility: hidden;
   bottom: 0;
   height: 12vh;
-  left: -100vh;
+  left: -180vh;
   margin: auto;
   position: absolute;
   top: 46.7vh;
+  transition: transform .03s;
+  z-index: 1;
+}
+
+.mountain-back,
+.mountain-front {
+  height: 100vh;
+  left: -44vh;
+  position: absolute;
+  top: 0;
+}
+
+.mountain-front {
+  z-index: 2;
+}
+
+.informative {
+  background: #f4f4f4;
+  height: 100vh;
+  left: 29052px;
+  position: absolute;
+  top: 0;
+  width: 3000px;
+  z-index: 1;
 }

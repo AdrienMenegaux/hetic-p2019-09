@@ -10,15 +10,22 @@ const controller = new ScrollMagic.Controller({
   vertical: false,
 });
 
-// Create the Element Animation
+// When window is resized, get the width of BG
+let bgWidth = 0;
+window.onresize = function () {
+  bgWidth = document.querySelector('.bg').offsetWidth;
+  console.log(bgWidth);
+};
+
+// Create the Train Animation
 const TrainElement = TweenMax.to(
   '.train', 1, {
-    transform: 'translate3d(29048px,0,0)',
+    transform: 'translate3d(29948px,0,0)',
     ease: Linear.easeNone,
   }
 );
 
-// Build the Scene
+// Build the Train Scene
 const TrainScene = new ScrollMagic.Scene({
   triggerElement: '.bg',
   duration: 29048,
@@ -26,7 +33,7 @@ const TrainScene = new ScrollMagic.Scene({
   .setTween(TrainElement)
   .addIndicators();
 
-// Add Scenes to Controller
+// Add All Scenes to Controller
 controller.addScene([
   TrainScene,
 ]);
