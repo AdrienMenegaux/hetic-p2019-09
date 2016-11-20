@@ -42,8 +42,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'BuddyTrain',
-      template: 'front/templates/home.html'
+      template: 'front/templates/home.html',
     }),
     new ExtractTextPlugin('style.css')
   ],
