@@ -32,7 +32,7 @@ const TrainElement = TweenMax.to(
 
 // Build the Train Scene
 const TrainScene = new ScrollMagic.Scene({
-  triggerElement: '.bg',
+  triggerElement: '.container__bg',
   duration: TrainAnimationDuration,
 })
   .setTween(TrainElement)
