@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="430px" viewBox="0 0 345 430" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="8.92988606%" x2="50%" y2="45.8051485%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="2.4354273%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0.41634981" y="0" width="344.163498" height="680"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="13.1999995" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="16.016" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <rect id="path-6" x="0" y="0" width="228.908745" height="403.805405"></rect>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="228.908745" height="403.805405" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="228.908745" height="403.805405" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buddytrain/01-Copy-5" transform="translate(-32600.000000, -257.000000)">
+            <g id="Group-4" transform="translate(32574.000000, 78.000000)">
+                <g id="Group-4-Copy" transform="translate(24.000000, 0.000000)">
+                    <path d="M176.5,608.8 C270.212012,608.8 346.180608,532.867494 346.180608,439.2 C346.180608,345.532506 270.212012,269.6 176.5,269.6 C82.7879877,269.6 6.81939163,345.532506 6.81939163,439.2 C6.81939163,532.867494 82.7879877,608.8 176.5,608.8 Z" id="Oval" fill-opacity="0.226392663" fill="#BBBBBB" opacity="0.209999993"></path>
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-1)" transform="translate(172.498099, 340.000000) scale(-1, -1) translate(-172.498099, -340.000000) " xlink:href="#path-2"></use>
+                    <g mask="url(#mask-3)">
+                        <g transform="translate(40.435361, 219.200000)">
+                            <path d="M4.80228137,160.24024 L4.80228137,155.433033 L1.60076046,155.433033 L1.60076046,112.168168 L4.80228137,112.168168 L4.80228137,89.7345345 L-4.54747351e-13,89.7345345 L-4.54747351e-13,67.3009009 L4.80228137,67.3009009 L4.80228137,35.243177 C4.80228137,15.7789078 20.5823927,1.70530257e-13 40.045362,1.70530257e-13 L225.680874,1.70530257e-13 C245.14509,1.70530257e-13 260.923954,15.7706856 260.923954,35.243177 L260.923954,112.168168 L264.125475,112.168168 L264.125475,155.433033 L260.923954,155.433033 L260.923954,498.356823 C260.923954,517.821092 245.143843,533.6 225.680874,533.6 L40.045362,533.6 C20.581146,533.6 4.80228137,517.829314 4.80228137,498.356823 L4.80228137,203.505105 L1.60076046,203.505105 L1.60076046,160.24024 L4.80228137,160.24024 Z" id="Combined-Shape" filter="url(#filter-4)"></path>
+                            <g id="Group-3" stroke-width="1" fill-rule="evenodd">
+                                <path d="M4.80228137,160.24024 L4.80228137,155.433033 L1.60076046,155.433033 L1.60076046,112.168168 L4.80228137,112.168168 L4.80228137,89.7345345 L0,89.7345345 L0,67.3009009 L4.80228137,67.3009009 L4.80228137,35.243177 C4.80228137,15.7789078 20.5823927,0 40.045362,0 L225.680874,0 C245.14509,0 260.923954,15.7706856 260.923954,35.243177 L260.923954,112.168168 L264.125475,112.168168 L264.125475,155.433033 L260.923954,155.433033 L260.923954,498.356823 C260.923954,517.821092 245.143843,533.6 225.680874,533.6 L40.045362,533.6 C20.581146,533.6 4.80228137,517.829314 4.80228137,498.356823 L4.80228137,203.505105 L1.60076046,203.505105 L1.60076046,160.24024 L4.80228137,160.24024 Z" id="Combined-Shape" fill="#E6E6E6" opacity="0.841655344" filter="url(#filter-5)"></path>
+                                <path d="M4.80228137,160.24024 L4.80228137,155.433033 L1.60076046,155.433033 L1.60076046,112.168168 L4.80228137,112.168168 L4.80228137,89.7345345 L0,89.7345345 L0,67.3009009 L4.80228137,67.3009009 L4.80228137,35.243177 C4.80228137,15.7789078 20.5823927,-4.54747351e-13 40.045362,-4.54747351e-13 L225.680874,-4.54747351e-13 C245.14509,-4.54747351e-13 260.923954,15.7706856 260.923954,35.243177 L260.923954,112.168168 L264.125475,112.168168 L264.125475,155.433033 L260.923954,155.433033 L260.923954,498.356823 C260.923954,517.821092 245.143843,533.6 225.680874,533.6 L40.045362,533.6 C20.581146,533.6 4.80228137,517.829314 4.80228137,498.356823 L4.80228137,203.505105 L1.60076046,203.505105 L1.60076046,160.24024 L4.80228137,160.24024 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                                <g id="HOME-PAGE-Copy" transform="translate(19.209125, 56.084084)">
+                                    <mask id="mask-8" fill="white">
+                                        <use xlink:href="#path-6"></use>
+                                    </mask>
+                                    <g id="Mask" stroke="#E5E5E5" mask="url(#mask-7)" stroke-width="3.2032" fill="#FFFFFF">
+                                        <use mask="url(#mask-9)" xlink:href="#path-6"></use>
+                                    </g>
+                                    <rect id="Rectangle-3" fill="#F5F5F5" mask="url(#mask-8)" x="19.2091255" y="23.2" width="191.290875" height="56.8"></rect>
+                                    <rect id="Rectangle-3-Copy" fill="#F5F5F5" mask="url(#mask-8)" x="19.2091255" y="108" width="191.290875" height="325.6"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-5" fill="#F3F1F1" mask="url(#mask-3)" x="155.644487" y="243.284084" width="41" height="6" rx="3"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,102 +1,157 @@
-html {
-    background-color: #F5F4F5;
+body {
+  background-color: $color-body;
 }
 
-// --- Mockup 01 ---
-.wrapper{
+.wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__separator {
+    align-items: center;
+    color: $color-seperator;
     display: flex;
+    font-family: $font-family-separator;
+    font-size: $fontsize-mobile-separator;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 5%;
+  }
+
+  &__line {
+    background-color: $color-seperator;
+    height: $height-line-mobile;
+    margin-left: 5%;
+    width: 75%;
+  }
+
+  &__container{
+    flex-direction: column;
+    height: 30vw;
+    margin-top: 10%;
     width: 90vw;
+  }
+
+  &__title {
+    font-family: $font-family-sans;
+    font-size: $fontsize-mobile-title;
+    font-weight: bold;
+    margin-bottom: 5%;
+  }
+
+  &__content {
+    display: block;
+    font-family: $font-family-sans;
+    font-size: $fontsize-mobile-content;
+    line-height: $line-height-mobile;
+    text-align: justify;
+    width: 90%;
+  }
+
+  &__mockup {
+    margin: auto;
+    width: 50vw;
+  }
+
+  &__mockup img {
+    margin: 80px 0 0 -10px;
+    max-height: 60vh;
+  }
+
+
+  &__title--red {
+    color: $color-title-red;
+  }
+
+  &__title--green {
+    color: $color-title-green;
+  }
+
+  &__content p {
+    padding-bottom: 5%;
+  }
+}
+
+// --- section 1 ---
+@media  (max-width: 670px ) and (orientation: landscape) {
+
+  .section-1 {
+    overflow: hidden;
+
+    img {
+      height: 120vh;
+    }
+  }
+
+
+  // --- Wrapper ---
+  .wrapper {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin: auto;
+    width: 90vw;
 
     &__mockup {
-        flex-direction: row;
+      margin-left: 15%;
+      width: 50vw;
     }
 
-    // Wrapper container
-    &__container {
-        flex-direction: column;
-        height: 30vw;
-        width: 30vw;
-        margin-top: 10%;
+    &__mockup img {
+      margin: 50px 0 0;
+      max-height: 120vh;
+    }
+  }
+
+}
+
+@media (min-width: 750px) {
+
+  .section-1 {
+    overflow: visible;
+
+    img {
+      height: 80vh;
+      margin-top: 0;
+    }
+  }
+
+  // --- Mockup 01 ---
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10px;
+    width: 80vw;
+
+    img {
+      margin-left: 15%;
+      max-height: 80vh;
     }
 
-    &__separator {
-        font-family: "ITC Calson 224 Std";
-        font-weight: bold;
-        font-style: italic;
-        font-size: 28px;
-        color: #E7E7E7;
-        display: flex;
-        align-items: center;
-        margin-bottom: 5%;
+    &__mockup {
+      margin: auto;
     }
 
     &__line {
-        background-color: #E7E7E7;
-        height: 3px;
-        width: 70%;
-        margin-left: 5%;
+      height: $height-line-desktop;
+    }
+
+    &__container {
+      width: 30vw;
+    }
+
+    &__separator {
+      font-size: $fontsize-desktop-separator;
     }
 
     &__title {
-        font-family: "Roboto";
-        font-weight: bold;
-        font-size: 32px;
-        margin-bottom: 5%;
-    }
-
-    &__title--red {
-        color: #ce8080;
-    }
-
-    &__title--green {
-        color: #80CEC4;
+      font-size: $fontsize-desktop-title;
     }
 
     &__content {
-        font-family: "Roboto";
-        font-size: 19px;
-        line-height: 1.5;
-        width: 80%;
-        text-align: justify;
+      font-size: $fontsize-desktop-content;
+      line-height: $line-height-desktop;
     }
-
-    &__content p {
-        padding-bottom: 5%;
-    }
-
+  }
 
 }
-
-//
-// @media (min-width: 740px) {
-//
-//       .wrapper{
-//
-//         &__separator {
-//             font-size: 28px;
-//         }
-//
-//         &__title {
-//             font-size: 32px;
-//         }
-//
-//
-//         &__content {
-//             font-size: 19px;
-//             line-height: 30px;
-//             display: block;
-//         }
-//         &__mockup img{
-//             max-height:100vh;
-//         }
-//     }
-//
-//     .container{
-//
-//     &__header {
-//         font-size: 20px;
-//         }
-//     }
-// }

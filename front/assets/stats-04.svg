@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="376px" viewBox="0 0 307 376" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="11.0000002" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <circle id="path-2" cx="114" cy="32" r="7"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.714232568   0 0 0 0 0.714232568   0 0 0 0 0.714232568  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="83.4283323%" id="linearGradient-4">
+            <stop stop-color="#CE8080" stop-opacity="0.212267889" offset="0%"></stop>
+            <stop stop-color="#CE8080" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buddytrain/01-Copy-5" transform="translate(-35601.000000, -290.000000)">
+            <g id="Group-11" transform="translate(35627.000000, 269.000000)">
+                <g id="Group-10" transform="translate(0.000000, 28.000000)">
+                    <path d="" id="Path-2" stroke="#979797" stroke-width="1.10000002"></path>
+                    <rect id="Rectangle-7" fill-opacity="0.35" fill="#CE8080" filter="url(#filter-1)" x="0" y="19.4873669" width="255" height="323" rx="13.2000003"></rect>
+                    <path d="M0,13.4796713 C0,6.19263006 5.9125103,0.285315937 13.1951249,0.285315937 L241.804875,0.285315937 C249.092341,0.285315937 255,6.19572748 255,13.4796713 L255,329.693261 C255,336.980302 249.08749,342.887616 241.804875,342.887616 L13.1951249,342.887616 C5.90765866,342.887616 0,336.977204 0,329.693261 L0,13.4796713 Z" id="Rectangle-7" fill="#FFFFFF"></path>
+                    <path d="M25.5,267.5 L229.5,267.5" id="Line" stroke="#F4F4F4" stroke-linecap="square"></path>
+                    <polygon id="Triangle" fill="#FFFFFF" transform="translate(260.500000, 116.500000) rotate(-270.000000) translate(-260.500000, -116.500000) " points="260.5 108 269 125 252 125"></polygon>
+                    <text id="SEP-15" opacity="0.371433424" transform="translate(43.500000, 304.000000) rotate(-43.000000) translate(-43.500000, -304.000000) " font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" fill="#BBBBBB">
+                        <tspan x="19" y="309">SEP 15 </tspan>
+                    </text>
+                    <text id="OCT-15" opacity="0.371433424" transform="translate(97.500000, 303.000000) rotate(-43.000000) translate(-97.500000, -303.000000) " font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" fill="#BBBBBB">
+                        <tspan x="72" y="308">OCT 15 </tspan>
+                    </text>
+                    <text id="NOV-15" opacity="0.371433424" transform="translate(153.000000, 303.000000) rotate(-43.000000) translate(-153.000000, -303.000000) " font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" fill="#BBBBBB">
+                        <tspan x="127" y="308">NOV 15 </tspan>
+                    </text>
+                    <text id="DEC-15" opacity="0.371433424" transform="translate(208.000000, 303.000000) rotate(-43.000000) translate(-208.000000, -303.000000) " font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" fill="#BBBBBB">
+                        <tspan x="183" y="308">DEC 15 </tspan>
+                    </text>
+                    <g id="Group-3" transform="translate(42.000000, 175.000000)">
+                        <circle id="Oval-5" fill="#CE8080" cx="3.5" cy="35.5" r="3.5"></circle>
+                        <circle id="Oval-5-Copy" fill="#CE8080" cx="57.5" cy="15.5" r="3.5"></circle>
+                        <circle id="Oval-5-Copy-3" fill="#CE8080" cx="167.5" cy="11.5" r="3.5"></circle>
+                        <path d="M3.5,92.5 L3.5,0.5" id="Line" stroke="#BBBBBB" stroke-linecap="square" stroke-dasharray="1,7" opacity="0.253736413"></path>
+                        <path d="M57.5,92.5 L57.5,0.5" id="Line-Copy-2" stroke="#BBBBBB" stroke-linecap="square" stroke-dasharray="1,7" opacity="0.253736413"></path>
+                        <path d="M113.5,92.5 L113.5,0.5" id="Line-Copy-3" stroke="#BBBBBB" stroke-linecap="square" stroke-dasharray="1,7" opacity="0.253736413"></path>
+                        <path d="M167.5,92.5 L167.5,0.5" id="Line-Copy-4" stroke="#BBBBBB" stroke-linecap="square" stroke-dasharray="1,7" opacity="0.253736413"></path>
+                        <path d="M4,36 C8,31 34.5,15.5 57.5,15.5 C80.5,15.5 90,32.5 114,32.5 C138,32.5 145,13 168.5,12" id="Path-3" stroke="#CE8080"></path>
+                        <g id="Oval-5-Copy-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use stroke="#CE8080" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <path d="M1.01812877,36 C5.09063628,31 32.0709985,15.5 55.4879167,15.5 C78.9048348,15.5 88.5770402,32.5 113.012085,32.5 C137.44713,32.5 144.574018,13 168.5,12 C168.5,13 168.5,92.5248409 168.5,92.5248409 L3.12638804e-13,92.5248409" id="Path-3" fill="url(#linearGradient-4)"></path>
+                    </g>
+                    <g id="Group-8" transform="translate(39.000000, 53.000000)">
+                        <text id="Paris" font-family="Roboto-Bold, Roboto" font-size="32" font-weight="bold" fill="#CE8080">
+                            <tspan x="0" y="30">Paris</tspan>
+                        </text>
+                        <text id="Left-:-4-times" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" fill="#D4D4D4">
+                            <tspan x="50" y="81">Left : 4 times</tspan>
+                        </text>
+                        <text id="November" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" fill="#D4D4D4">
+                            <tspan x="50" y="58">November</tspan>
+                        </text>
+                        <g id="Group-7" transform="translate(6.000000, 49.000000)">
+                            <circle id="Oval-6" fill="#CE8080" opacity="0.480355525" filter="url(#filter-5)" cx="13" cy="13" r="13"></circle>
+                            <circle id="Oval-6" stroke="#CE8080" fill="#FFFFFF" cx="13" cy="13" r="13"></circle>
+                            <g id="Group-6" transform="translate(8.000000, 8.000000)" stroke="#CE8080">
+                                <g id="Group-4">
+                                    <path d="M1.5,0.5 L1.5,10.5" id="Line" stroke-linecap="square"></path>
+                                    <polygon id="Triangle-2" fill="#CE8080" transform="translate(1.500000, 9.500000) scale(1, -1) translate(-1.500000, -9.500000) " points="1.5 8 3 11 0 11"></polygon>
+                                </g>
+                                <g id="Group-4-Copy" transform="translate(8.500000, 5.500000) scale(1, -1) translate(-8.500000, -5.500000) translate(7.000000, 0.000000)">
+                                    <path d="M1.5,0.5 L1.5,10.5" id="Line" stroke-linecap="square"></path>
+                                    <polygon id="Triangle-2" fill="#CE8080" transform="translate(1.500000, 9.500000) scale(1, -1) translate(-1.500000, -9.500000) " points="1.5 8 3 11 0 11"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,43 @@
+// --- Variables ---
+// - Colors
+// - Typography
+// - Elements size
+// - Responsive
+
+// Base colors
+$color-body:        #f5f4f5;
+$color-seperator:   #e7e7e7;
+$color-title-red:   #ce8080;
+$color-title-green: #80cec4;
+$color-link:        #414141;
+
+// Base typography
+$fontsize-mobile-separator:  16px;
+$fontsize-mobile-title:      18px;
+$fontsize-mobile-content:    14px;
+$fontsize-desktop-separator: 28px;
+$fontsize-desktop-title:     32px;
+$fontsize-desktop-content:   20px;
+$line-height-mobile:         15px;
+$line-height-desktop:        30px;
+
+// Elements size
+$height-line-mobile:  2px;
+$height-line-desktop: 3px;
+
+// Mixins
+$landscape-max-width: 670px;
+$mobile-orientation:  landscape;
+$desktop-min-width:   750px;
+
+@mixin landscape {
+  @media (max-width: #{$landscape-max-width}) and (orientation: #{$mobile-orientation}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-min-width}) {
+    @content;
+  }
+}
