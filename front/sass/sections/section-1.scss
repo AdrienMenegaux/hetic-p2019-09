@@ -1,0 +1,102 @@
+html {
+    background-color: #F5F4F5;
+}
+
+// --- Mockup 01 ---
+.wrapper{
+    display: flex;
+    width: 90vw;
+    justify-content: space-around;
+    margin: auto;
+
+    &__mockup {
+        flex-direction: row;
+    }
+
+    // Wrapper container
+    &__container {
+        flex-direction: column;
+        height: 30vw;
+        width: 30vw;
+        margin-top: 10%;
+    }
+
+    &__separator {
+        font-family: "ITC Calson 224 Std";
+        font-weight: bold;
+        font-style: italic;
+        font-size: 28px;
+        color: #E7E7E7;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    &__line {
+        background-color: #E7E7E7;
+        height: 3px;
+        width: 70%;
+        margin-left: 5%;
+    }
+
+    &__title {
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 5%;
+    }
+
+    &__title--red {
+        color: #ce8080;
+    }
+
+    &__title--green {
+        color: #80CEC4;
+    }
+
+    &__content {
+        font-family: "Roboto";
+        font-size: 19px;
+        line-height: 1.5;
+        width: 80%;
+        text-align: justify;
+    }
+
+    &__content p {
+        padding-bottom: 5%;
+    }
+
+
+}
+
+//
+// @media (min-width: 740px) {
+//
+//       .wrapper{
+//
+//         &__separator {
+//             font-size: 28px;
+//         }
+//
+//         &__title {
+//             font-size: 32px;
+//         }
+//
+//
+//         &__content {
+//             font-size: 19px;
+//             line-height: 30px;
+//             display: block;
+//         }
+//         &__mockup img{
+//             max-height:100vh;
+//         }
+//     }
+//
+//     .container{
+//
+//     &__header {
+//         font-size: 20px;
+//         }
+//     }
+// }
