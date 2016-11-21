@@ -1,0 +1,46 @@
+
+
+
+
+.Grid {
+  display: flex;
+  flex-flow: row; 
+  flex-wrap: wrap;
+}
+
+.Grid-cell {
+  flex: 1;
+}
+
+
+/* Base classes for all media - Mobile first */
+.Grid--1of2 > .Grid-cell {
+  flex: 0 0 100%; 
+}
+
+
+/* Tablet (medium) screens */
+@media (min-width: 30em) {
+
+  .Grid--1of2 > .Grid-cell {
+    flex: 0 0 100%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 48em) {
+  
+  .Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+  
+}
+  
+
+
+html {
+    background-color: #F5F4F5;
+}
+
+
+
