@@ -10,17 +10,21 @@ const controller = new ScrollMagic.Controller({
   vertical: false,
 });
 
-// When window is resized, get the width of BG
-let bgWidth = 0;
+const browserHeight = window.innerHeight;
+console.log('taille du nav: ' + browserHeight);
+
+const TrainAnimationDuration = browserHeight * 31.1;
+console.log('Animation duration : ' + TrainAnimationDuration);
+
+// Reload all Data when browserHeight change
 window.onresize = function () {
-  bgWidth = document.querySelector('.bg').offsetWidth;
-  console.log(bgWidth);
+  location.reload();
 };
 
 // Create the Train Animation
 const TrainElement = TweenMax.to(
   '.train', 1, {
-    transform: 'translate3d(29948px,0,0)',
+    transform: 'translate3d(3290vh,0,0)',
     ease: Linear.easeNone,
   }
 );
@@ -28,12 +32,35 @@ const TrainElement = TweenMax.to(
 // Build the Train Scene
 const TrainScene = new ScrollMagic.Scene({
   triggerElement: '.bg',
-  duration: 29048,
+  duration: TrainAnimationDuration,
 })
   .setTween(TrainElement)
   .addIndicators();
 
+// Build the Scene One Scene
+const SectionOneScene = new ScrollMagic.Scene({
+  triggerElement: '.section-1-img',
+  triggerHook: 0.25,
+  duration: 2000,
+  offset: '50%',
+})
+  .setPin('.section-1-img')
+  .addIndicators();
+
+// Build the Scene Two Scene
+const SectionTwoScene = new ScrollMagic.Scene({
+  triggerElement: '.section-2-img',
+  triggerHook: 0.25,
+  duration: 2000,
+  offset: '50%',
+})
+  .setPin('.section-2-img')
+  .addIndicators();
+
+
 // Add All Scenes to Controller
 controller.addScene([
   TrainScene,
+  SectionOneScene,
+  SectionTwoScene,
 ]);
