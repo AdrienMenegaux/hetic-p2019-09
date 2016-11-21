@@ -26,6 +26,7 @@ const TrainElement = TweenMax.to(
   '.train', 1, {
     transform: 'translate3d(3290vh,0,0)',
     ease: Linear.easeNone,
+    transition: 'all 100ms',
   }
 );
 

@@ -4,53 +4,86 @@ $grey: #f4f4f4;
   align-items: center;
   display: flex;
   width: 80000px;
-}
 
-.bg {
-  height: 100vh;
-}
-
-.mountain-back {
-  align-self: flex-start;
-  height: 72vh;
-  margin-left: -94vh;
-}
-
-.mountain-front {
-  align-self: flex-start;
-  height: 93vh;
-  margin-left: -86.2vh;
-  margin-top: -.6vh;
-  z-index: 1;
-}
-
-.section-1 {
-  align-items: center;
-  background: $grey;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  margin-left: -1vh;
-  width: 6000px;
-  z-index: 1;
-
-  img {
-    height: 60vh;
+  .container__sunandclouds {
+    position: absolute;
+    height: 45vh;
+    top: 6vh;
+    left: 10vh;
   }
-}
 
-.section-2 {
-  align-items: center;
-  background: $grey;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  margin-left: -1vh;
-  width: 6000px;
-  z-index: 1;
+  .container__bg {
+    height: 100vh;
+  }
 
-  img {
-    height: 50vh;
+  .container__plan1 {
+    position: absolute;
+    bottom: 0;
+    left: -45vh;
+    height: 15vh;
+  }
+
+  .container__plan2 {
+    position: absolute;
+    bottom: 9vh;
+    z-index: 1;
+    height: 21.5vh;
+  }
+
+  .container__plan3 {
+    position: absolute;
+    bottom: 19.83vh;
+    height: 30.5vh;
+  }
+
+  .container__plan4 {
+    position: absolute;
+    bottom: 19.83vh;
+    height: 30.5vh;
+  }
+
+  .container__mountain--back {
+    align-self: flex-start;
+    height: 72vh;
+    margin-left: -94vh;
+  }
+
+  .container__mountain--front {
+    align-self: flex-start;
+    height: 93vh;
+    margin-left: -86.2vh;
+    margin-top: -.6vh;
+    z-index: 1;
+  }
+
+  .container__section-1 {
+    align-items: center;
+    background: $grey;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin-left: -1vh;
+    width: 6000px;
+    z-index: 1;
+
+    img {
+      height: 60vh;
+    }
+  }
+
+  .container__section-2 {
+    align-items: center;
+    background: $grey;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin-left: -1vh;
+    width: 6000px;
+    z-index: 1;
+
+    img {
+      height: 50vh;
+    }
   }
 }
 
@@ -58,7 +91,7 @@ $grey: #f4f4f4;
   backface-visibility: hidden;
   bottom: 0;
   height: 12vh;
-  left: -180vh;
+  left: -110vh;
   margin: auto;
   position: absolute;
   top: 46.7vh;
