@@ -72,6 +72,19 @@ $grey: #f4f4f4;
       margin-top: -.6vh;
       z-index: 3;
     }
+
+    .background__snow {
+      animation: snow 10s linear infinite;
+      background: none;
+      background-image:
+      url('http://www.wearewebstars.dk/codepen/img/s1.png'),
+      url('http://www.wearewebstars.dk/codepen/img//s2.png'),
+      url('http://www.wearewebstars.dk/codepen/img//s3.png');
+      height: 100vh;
+      margin-left: -1000vh;
+      width: 1000vh;
+      z-index: 3;
+    }
   }
 
   .section-1 {
@@ -115,6 +128,12 @@ $grey: #f4f4f4;
   top: 46.7vh;
   transition: transform .03s;
   z-index: 2;
+}
+
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
 //
 // .mountain-back,

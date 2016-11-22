@@ -35,7 +35,7 @@ const BackMountain = TweenMax.to(
   '.background__plan4', 1, {
     transform: 'translate3d(500vh,0,0)',
     ease: Linear.easeNone,
-    transition: 'all 200ms',
+    transition: 'all 100ms',
   }
 );
 
@@ -44,7 +44,7 @@ const FrontHouses = TweenMax.to(
   '.background__plan2', 1, {
     transform: 'translate3d(-300vh,0,0)',
     ease: Linear.easeNone,
-    transition: 'all 200ms',
+    transition: 'all 100ms',
   }
 );
 
