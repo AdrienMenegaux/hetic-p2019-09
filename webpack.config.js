@@ -2,12 +2,11 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var autoprefixer = require('autoprefixer');
+require('babel-polyfill');
 
 module.exports = {
   debug: true,
-  entry: {
-    main: './front/js/app.js'
-  },
+  entry: ['babel-polyfill', './front/js/app.js'],
   output: {
     path: path.join(__dirname, '/public'),
     filename: 'bundle.js'
