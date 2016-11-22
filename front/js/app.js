@@ -5,6 +5,21 @@ import TweenMax from 'gsap';
 
 require('../sass/main.scss');
 
+// Color train windows
+function NightModeTrigger()
+{
+  const windows = document.querySelectorAll('#window');
+  for (var i = 0; i < windows.length; i++) {
+    (function(i){
+      setTimeout(function(){
+        windows[i].style.fill = "#fef3d7";
+      }, Math.random() * 3000);
+    })(i);
+  }
+}
+// NightModeTrigger();
+
+
 // Init ScrollMagic Controller
 const controller = new ScrollMagic.Controller({
   vertical: false,
@@ -69,6 +84,18 @@ const FrontHousesScene = new ScrollMagic.Scene({
   .setTween(FrontHouses)
   .addIndicators();
 
+// Night mode
+const NightMode = new ScrollMagic.Scene({
+  triggerHook: 0.75,
+  duration: 1000,
+  offset: '300%',
+})
+  .on('start', function()
+  {
+    NightModeTrigger();
+  })
+  .addIndicators();
+
 // Build the Scene One Scene
 const SectionOneScene = new ScrollMagic.Scene({
   triggerElement: '.section-1-img',
@@ -95,6 +122,7 @@ controller.addScene([
   TrainScene,
   BackMoutainScene,
   FrontHousesScene,
+  NightMode,
   SectionOneScene,
   SectionTwoScene,
 ]);
