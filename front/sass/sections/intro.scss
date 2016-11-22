@@ -50,6 +50,21 @@ $grey: #f4f4f4;
   z-index: 1;
 
   img {
+    height: 25vh;
+  }
+}
+
+.section-3 {
+  align-items: center;
+  background: $grey;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin-left: -1vh;
+  width: 6000px;
+  z-index: 1;
+
+  img {
     height: 50vh;
   }
 }
