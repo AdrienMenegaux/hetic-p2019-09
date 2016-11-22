@@ -43,6 +43,57 @@ $grey: #f4f4f4;
     }
   }
 
+  .discussion {
+    left: 70vh;
+    top: 10vh;
+    position: absolute;
+    z-index: 3;
+
+    .discussion__bubble {
+      position: relative;
+      border-radius: 12.48px;
+      width: 30vh;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 12px;
+      margin-bottom: 2vh;
+
+      &.white {
+        background-color: white;
+        color: #525252;
+        margin-left: 29vh;
+
+        &::after {
+          content: "";
+          color: red;
+          width: 22px;
+          height: 15px;
+          background: url('../assets/bubble-white.svg');
+          bottom: 0.2vh;
+          right: -1.3vh;
+          position: absolute;
+        }
+      }
+
+      &.blue {
+        background-color: #80ADCE;
+        color: #FFFFFF;
+
+        &::after {
+          content: "";
+          color: red;
+          width: 22px;
+          height: 15px;
+          background: url('../assets/bubble-blue.svg');
+          bottom: 0.2vh;
+          left: -1.3vh;
+          position: absolute;
+        }
+      }
+    }
+  }
+
   .background {
     align-items: center;
     display: flex;
