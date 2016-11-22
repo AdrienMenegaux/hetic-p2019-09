@@ -86,9 +86,10 @@ const FrontHousesScene = new ScrollMagic.Scene({
 
 // Night mode
 const NightMode = new ScrollMagic.Scene({
+  triggetElement: '.background__snow',
   triggerHook: 0.75,
-  duration: 1000,
-  offset: '300%',
+  duration: 2000,
+  // offset: '50%',
 })
   .on('start', function()
   {
