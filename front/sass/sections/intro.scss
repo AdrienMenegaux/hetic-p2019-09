@@ -5,6 +5,44 @@ $grey: #f4f4f4;
   display: flex;
   width: 80000px;
 
+  .notification {
+    display: flex;
+    position: absolute;
+    width: 37vh;
+    height: 10vh;
+    border-radius: 12.48px;
+    background-color: white;
+    left: 10vh;
+    top: 10vh;
+    z-index: 3;
+
+    .notification__icon {
+      width: 40%;
+      text-align: center;
+
+      img {
+        margin-top: -3vh;
+      }
+    }
+
+    .notification__text {
+      width: 60%;
+      line-height: 1.2;
+      margin-top: 1vh;
+      padding: 10px;
+      padding-top: 0px;
+
+      .notification__text--time {
+        color: #DBDBDB;
+        margin-bottom: 1vh;
+      }
+
+      .notification__text--content {
+        font-size: 17px;
+      }
+    }
+  }
+
   .background {
     align-items: center;
     display: flex;
