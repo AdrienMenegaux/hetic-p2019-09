@@ -6,7 +6,10 @@ require('babel-polyfill');
 
 module.exports = {
   debug: true,
-  entry: ['babel-polyfill', './front/js/app.js'],
+  entry: [
+    'babel-polyfill',
+    './front/js/app.js'
+  ],
   output: {
     path: path.join(__dirname, '/public'),
     filename: 'bundle.js'

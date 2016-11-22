@@ -30,11 +30,43 @@ const TrainElement = TweenMax.to(
   }
 );
 
+// Create the Back Moutain Animation
+const BackMountain = TweenMax.to(
+  '.background__plan4', 1, {
+    transform: 'translate3d(500vh,0,0)',
+    ease: Linear.easeNone,
+    transition: 'all 200ms',
+  }
+);
+
+// Create the Back Moutain Animation
+const FrontHouses = TweenMax.to(
+  '.background__plan2', 1, {
+    transform: 'translate3d(-300vh,0,0)',
+    ease: Linear.easeNone,
+    transition: 'all 200ms',
+  }
+);
+
 // Build the Train Scene
 const TrainScene = new ScrollMagic.Scene({
   duration: TrainAnimationDuration,
 })
   .setTween(TrainElement)
+  .addIndicators();
+
+// Build the Train Scene
+const BackMoutainScene = new ScrollMagic.Scene({
+  duration: TrainAnimationDuration,
+})
+  .setTween(BackMountain)
+  .addIndicators();
+
+// Build the Train Scene
+const FrontHousesScene = new ScrollMagic.Scene({
+  duration: TrainAnimationDuration,
+})
+  .setTween(FrontHouses)
   .addIndicators();
 
 // Build the Scene One Scene
@@ -61,6 +93,8 @@ const SectionTwoScene = new ScrollMagic.Scene({
 // Add All Scenes to Controller
 controller.addScene([
   TrainScene,
+  BackMoutainScene,
+  FrontHousesScene,
   SectionOneScene,
   SectionTwoScene,
 ]);
