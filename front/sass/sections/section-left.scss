@@ -1,0 +1,133 @@
+.section-left{
+    .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    height: 90vh;
+
+
+    &__separator {
+      align-items: center;
+      color: $color-seperator;
+      display: flex;
+      font-family: $font-family-separator;
+      font-size: $fontsize-mobile-separator;
+      font-style: italic;
+      font-weight: bold;
+      margin-bottom: 5%;
+    }
+
+    &__line {
+      background-color: $color-seperator;
+      height: $height-line-mobile;
+      margin-left: 5%;
+      width: 100%;
+    }
+
+    &__container{
+      width : 80vw;
+    }
+
+    &__title {
+      font-family: $font-family-sans;
+      font-size: $fontsize-mobile-title;
+      font-weight: bold;
+      margin-bottom: 5vh;
+      text-align: left;
+    }
+
+    &__content {
+
+      font-family: $font-family-sans;
+      font-size: $fontsize-mobile-content;
+      line-height: $line-height-mobile;
+      text-align: left;
+    }
+
+    &__mockup {
+      &--special{
+        width: 90vw;
+      }
+      &--standart{
+        height:  40vh;
+      }
+    }
+
+    &__title--red {
+      color: $color-title-red;
+    }
+
+    &__title--green {
+      color: $color-title-green;
+    }
+
+    &__content p {
+      padding-bottom: 5%;
+    }
+  }
+}
+
+// --- section 1 ---
+@media  (max-width: 670px ) and (orientation: landscape) {
+
+    .section-left{
+      .wrapper {
+      flex-direction: row;
+
+      &__container{
+        width : 50vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 750px) {
+
+
+  // --- Mockup 01 ---
+    .section-left{
+      .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 10px;
+      width: 80vw;
+
+      &__mockup{
+        &--special{
+          width: 50vw;
+        }
+        &--standart{
+          height: 50vh;
+        }
+      }
+
+      &__mockup {
+        margin: auto;
+      }
+
+      &__line {
+        height: $height-line-desktop;
+      }
+
+      &__container {
+        width: 30vw;
+      }
+
+      &__separator {
+        font-size: $fontsize-desktop-separator;
+      }
+
+      &__title {
+        font-size: $fontsize-desktop-title;
+      }
+
+      &__content {
+        font-size: $fontsize-desktop-content;
+        line-height: $line-height-desktop;
+      }
+    }
+  }
+}
