@@ -10,11 +10,11 @@ const controller = new ScrollMagic.Controller({
   vertical: false,
 });
 
+// Get Height of Browser
 const browserHeight = window.innerHeight;
-console.log('taille du nav: ' + browserHeight);
 
+// Convert the duration for Train Animation
 const TrainAnimationDuration = browserHeight * 31.1;
-console.log('Animation duration : ' + TrainAnimationDuration);
 
 // Reload all Data when browserHeight change
 window.onresize = function () {
