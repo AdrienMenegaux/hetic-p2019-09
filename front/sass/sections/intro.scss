@@ -18,12 +18,12 @@ $white: #fff;
     left: 344vh;
     position: absolute;
     top: 10vh;
-    width: 300px;
+    width: 350px;
     z-index: 3;
 
     .notification__icon {
       text-align: center;
-      width: 40%;
+      width: 30%;
 
       img {
         margin-top: -20px;
@@ -35,7 +35,7 @@ $white: #fff;
       line-height: 1.2;
       padding: 10px;
       padding-left: 0;
-      width: 60%;
+      width: 70%;
 
       .notification__text--time {
         color: $time-text-color;
@@ -56,6 +56,10 @@ $white: #fff;
     top: 10vh;
     z-index: 3;
 
+    @media screen and (max-width: 750px) {
+      top: 5vh;
+    }
+
     .discussion__bubble {
       border-radius: 12.48px;
       font-size: .9rem;
@@ -66,6 +70,10 @@ $white: #fff;
       padding-top: 20px;
       position: relative;
       width: 285px;
+
+      @media screen and (max-width: 750px) {
+        font-size: .7rem;
+      }
 
       &.white {
         background-color: $white;
