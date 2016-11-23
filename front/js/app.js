@@ -104,6 +104,7 @@ const NightMode = new ScrollMagic.Scene({
 const NotificationScene = new ScrollMagic.Scene({
   triggerElement: '.notification',
   pushFollowers: true,
+  triggerHook: 0.25,
   duration: '3500vh',
 })
   .setPin('.notification')
