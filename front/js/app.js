@@ -13,8 +13,9 @@ const controller = new ScrollMagic.Controller({
 // Get Height of Browser
 const browserHeight = window.innerHeight;
 
-// Convert the duration for Train Animation
+// Convert the duration for the Elements Animation
 const TrainAnimationDuration = browserHeight * 31.1;
+const SunAnimationDuration = browserHeight * 20;
 
 // Reload all Data when browserHeight change
 window.onresize = function () {
@@ -25,6 +26,15 @@ window.onresize = function () {
 const TrainElement = TweenMax.to(
   '.train', 1, {
     transform: 'translate3d(3290vh,0,0)',
+    ease: Linear.easeNone,
+    transition: 'all 100ms',
+  }
+);
+
+// Create the Sun Animation
+const Sun = TweenMax.to(
+  '.background__sun', 1, {
+    transform: 'translate3d(2150vh,50vh,0)',
     ease: Linear.easeNone,
     transition: 'all 100ms',
   }
@@ -55,7 +65,16 @@ const TrainScene = new ScrollMagic.Scene({
   .setTween(TrainElement)
   .addIndicators();
 
-// Build the Train Scene
+// Build the Sun Scene
+const SunScene = new ScrollMagic.Scene({
+  duration: SunAnimationDuration,
+})
+  .setTween(Sun)
+  .addIndicators({
+    name: 'Sun',
+  });
+
+// Build the BackMountain Scene
 const BackMoutainScene = new ScrollMagic.Scene({
   duration: TrainAnimationDuration,
 })
@@ -64,7 +83,7 @@ const BackMoutainScene = new ScrollMagic.Scene({
     name: 'Back Moutain',
   });
 
-// Build the Train Scene
+// Build the FrontHouse Scene
 const FrontHousesScene = new ScrollMagic.Scene({
   duration: TrainAnimationDuration,
 })
@@ -131,6 +150,7 @@ const SectionTwoScene = new ScrollMagic.Scene({
 // Add All Scenes to Controller
 controller.addScene([
   TrainScene,
+  SunScene,
   Snow,
   BackMoutainScene,
   FrontHousesScene,

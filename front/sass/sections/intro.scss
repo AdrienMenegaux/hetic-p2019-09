@@ -105,6 +105,13 @@ $grey: #f4f4f4;
       left: 10vh;
     }
 
+    .background__sun {
+      height: 15vh;
+      position: absolute;
+      top: 10vh;
+      transform: translate3d(10vh, 0, 0);
+    }
+
     .background__colors {
       height: 100vh;
     }
@@ -166,9 +173,9 @@ $grey: #f4f4f4;
       animation: snow 10s linear infinite;
       background: none;
       background-image:
-      url('http://www.wearewebstars.dk/codepen/img/s1.png'),
-      url('http://www.wearewebstars.dk/codepen/img//s2.png'),
-      url('http://www.wearewebstars.dk/codepen/img//s3.png');
+      url('../assets/snow/1.png'),
+      url('../assets/snow/2.png'),
+      url('../assets/snow/3.png');
       height: 100vh;
       margin-left: -1000vh;
       width: 1000vh;
@@ -228,25 +235,3 @@ $grey: #f4f4f4;
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
-//
-// .mountain-back,
-// .mountain-front {
-//   height: 100vh;
-//   left: -44vh;
-//   position: absolute;
-//   top: 0;
-// }
-//
-// .mountain-front {
-//   z-index: 2;
-// }
-//
-// .informative {
-//   background: #f4f4f4;
-//   height: 100vh;
-//   left: 29052px;
-//   position: absolute;
-//   top: 0;
-//   width: 3000px;
-//   z-index: 1;
-// }
