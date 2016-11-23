@@ -5,11 +5,6 @@ import TweenMax from 'gsap';
 
 require('../sass/main.scss');
 
-// document.querySelector('body').onmousewheel = function (event) {
-//   const delta=event.detail? event.detail*(-20) : event.wheelDelta; this.scrollLeft -= delta;
-// }
-
-
 // Init ScrollMagic Controller
 const controller = new ScrollMagic.Controller({
   vertical: false,

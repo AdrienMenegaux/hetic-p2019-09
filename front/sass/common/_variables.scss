@@ -4,13 +4,17 @@
 // - Elements size
 
 // Base colors
-// $color-body:        #f5f4f5;
-$color-body:        linear-gradient(left, #f5f4f5 0%, #ffffff 25%);
-$color-body-white:  #fff;
-$color-seperator:   #e7e7e7;
-$color-title-red:   #ce8080;
-$color-title-green: #80cec4;
-$color-link:        #414141;
+$color-body:             linear-gradient(left, #f5f4f5 0%, #fff 25%);
+$white:                  #fff;
+$grey:                   #f4f4f4;
+$text-color:             #525252;
+$time-text-color:        #dbdbdb;
+$color-seperator:        #e7e7e7;
+$color-title-red:        #ce8080;
+$color-title-green:      #80cec4;
+$color-link:             #414141;
+$bubble-text-color:      #525252;
+$bubble-blue-background: #80adce;
 
 
 // Base typography
