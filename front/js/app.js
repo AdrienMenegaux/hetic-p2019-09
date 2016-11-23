@@ -53,7 +53,7 @@ const TrainElement = TweenMax.to(
 // Create the Sun Animation
 const Sun = TweenMax.to(
   '.background__sun', 1, {
-    transform: 'translate3d(2150vh,50vh,0)',
+    transform: 'translate3d(2150vh,48vh,0)',
     ease: Linear.easeNone,
     transition: 'all 100ms',
   }
