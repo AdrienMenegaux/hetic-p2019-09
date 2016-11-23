@@ -8,7 +8,7 @@ $white: #fff;
 .container {
   align-items: center;
   display: flex;
-  width: 80000px;
+  width: 4480vh;;
 
   .menu {
     margin-left: 5vh;
@@ -247,10 +247,13 @@ $white: #fff;
   }
 }
 
-.first-section {
-  background: $color-body;
+.gradient {
+  background-image: $color-body;
   height: 100vh;
+  margin-left: -1vh;
   overflow: hidden;
+  width: 50vh;
+  z-index: 2;
 }
 
 .section-end {
