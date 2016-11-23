@@ -40,6 +40,19 @@ $white: #fff;
   }
 }
 
+.intro {
+  align-items: center;
+  color: $white;
+  display: flex;
+  font-size: 28px;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .45);
+  width: 100vw;
+  z-index: 1;
+}
+
 .notification {
   background-color: $white;
   border-radius: 12.48px;
