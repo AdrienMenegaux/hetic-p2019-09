@@ -40,6 +40,15 @@ const Sun = TweenMax.to(
   }
 );
 
+// Create the Sun Animation
+const Clouds = TweenMax.to(
+  '.background__clouds', 1, {
+    transform: 'translate3d(890vh,0,0)',
+    ease: Linear.easeNone,
+    transition: 'all 100ms',
+  }
+);
+
 // Create the Back Moutain Animation
 const BackMountain = TweenMax.to(
   '.background__plan4', 1, {
@@ -73,6 +82,13 @@ const SunScene = new ScrollMagic.Scene({
   .addIndicators({
     name: 'Sun',
   });
+
+// Build the Clouds Scene
+const CloudsScene = new ScrollMagic.Scene({
+  duration: TrainAnimationDuration,
+})
+  .setTween(Clouds)
+  .addIndicators();
 
 // Build the BackMountain Scene
 const BackMoutainScene = new ScrollMagic.Scene({
@@ -151,6 +167,7 @@ const SectionTwoScene = new ScrollMagic.Scene({
 controller.addScene([
   TrainScene,
   SunScene,
+  CloudsScene,
   Snow,
   BackMoutainScene,
   FrontHousesScene,
