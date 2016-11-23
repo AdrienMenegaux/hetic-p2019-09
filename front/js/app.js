@@ -1,8 +1,5 @@
-import ScrollMagic from 'scrollmagic';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
-import TweenMax from 'gsap';
 
+<<<<<<< HEAD
 require('../sass/main.scss');
 
 document.querySelector('body').onmousewheel = function (event) {
@@ -69,85 +66,20 @@ const FrontHouses = TweenMax.to(
 
 // Build the Train Scene
 const TrainScene = new ScrollMagic.Scene({
+=======
+// Build the Clouds Scene
+const CloudsScene = new ScrollMagic.Scene({
+>>>>>>> c6f08b33e450eff2d6734aefa865b97c4ce3bc01
   duration: TrainAnimationDuration,
 })
-  .setTween(TrainElement)
+  .setTween(Clouds)
   .addIndicators();
 
-// Build the Train Scene
-const BackMoutainScene = new ScrollMagic.Scene({
-  duration: TrainAnimationDuration,
-})
-  .setTween(BackMountain)
-  .addIndicators({
-    name: 'Back Moutain',
-  });
-
-// Build the Train Scene
-const FrontHousesScene = new ScrollMagic.Scene({
-  duration: TrainAnimationDuration,
-})
-  .setTween(FrontHouses)
-  .addIndicators({
-    name: 'Front House',
-  });
-
-// Night mode
-const NightMode = new ScrollMagic.Scene({
-  triggetElement: '.background__snow',
-  triggerHook: 0.75,
-  duration: '1000',
-  // offset: '50%',
-})
-  .on('start', function() {NightModeTrigger();})
-  .addIndicators({
-    name: 'NightMode',
-  });
-
-// Build the Notification Scene
-const NotificationScene = new ScrollMagic.Scene({
-  triggerElement: '.notification',
-  pushFollowers: true,
-  triggerHook: 0.25,
-  duration: '3500vh',
-})
-  .setPin('.notification')
-  .addIndicators({
-    name: 'Notification',
-  });
-
-// Build the Scene One Scene
-const SectionOneScene = new ScrollMagic.Scene({
-  triggerElement: '.section-1-img',
-  triggerHook: 0.25,
-  duration: 2000,
-  offset: '50%',
-})
-  .setPin('.section-1-img')
-  .addIndicators({
-    name: 'Section One',
-  });
-
-// Build the Scene Two Scene
-const SectionTwoScene = new ScrollMagic.Scene({
-  triggerElement: '.section-2-img',
-  triggerHook: 0.25,
-  duration: 2000,
-  offset: '50%',
-})
-  .setPin('.section-2-img')
-  .addIndicators({
-    name: 'Section Two',
-  });
-
-
-// Add All Scenes to Controller
-controller.addScene([
-  TrainScene,
+  CloudsScene,
+  Snow,
   BackMoutainScene,
   FrontHousesScene,
   NotificationScene,
-  NightMode,
   SectionOneScene,
   SectionTwoScene,
 ]);

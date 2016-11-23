@@ -33,7 +33,7 @@ linters:
 
   SelectorFormat:
     enabled: true
-    convention: hyphenated_BEM
+    convention: BEM
     class_convention: ^(?!js-).*
     class_convention_explanation: should not be written in the form js-*
 
