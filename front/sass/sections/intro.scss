@@ -5,6 +5,10 @@ $text-color: #5f5f5f;
 $time-text-color: #dbdbdb;
 $white: #fff;
 
+html {
+  overflow-y: hidden;
+}
+
 .container {
   align-items: center;
   display: flex;

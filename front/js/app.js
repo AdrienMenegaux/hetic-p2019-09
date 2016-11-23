@@ -5,6 +5,10 @@ import TweenMax from 'gsap';
 
 require('../sass/main.scss');
 
+document.querySelector('body').onmousewheel = function (event) {
+  const delta=event.detail? event.detail*(-120) : event.wheelDelta; this.scrollLeft -= delta;
+}
+
 // Color train windows
 function NightModeTrigger()
 {
