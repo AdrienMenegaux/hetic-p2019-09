@@ -1,0 +1,294 @@
+$bubble-text-color: #525252;
+$bubble-blue-background: #80adce;
+$grey: #f4f4f4;
+$text-color: #5f5f5f;
+$time-text-color: #dbdbdb;
+$white: #fff;
+
+.container {
+  align-items: center;
+  display: flex;
+  width: 80000px;
+
+  .menu {
+    margin-left: 5vh;
+    position: fixed;
+    top: 5vh;
+
+    &.black {
+      ul {
+        li {
+          color: $text-color;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        color: white;
+        display: inline;
+        margin-right: 20px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .notification {
+    background-color: $white;
+    border-radius: 12.48px;
+    display: flex;
+    height: auto;
+    left: 344vh;
+    position: absolute;
+    top: 30vh;
+    width: 350px;
+    z-index: 3;
+
+    .notification__icon {
+      text-align: center;
+      width: 30%;
+
+      img {
+        margin-top: -20px;
+        width: 65px;
+      }
+    }
+
+    .notification__text {
+      line-height: 1.2;
+      padding: 10px;
+      padding-left: 0;
+      width: 70%;
+
+      .notification__text--time {
+        color: $time-text-color;
+        font-size: .8rem;
+        margin-bottom: 5px;
+      }
+
+      .notification__text--content {
+        color: $text-color;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .discussion {
+    left: 658vh;
+    position: absolute;
+    top: 10vh;
+    z-index: 3;
+
+    @media screen and (max-width: 750px) {
+      top: 5vh;
+    }
+
+    .bubble_two {
+      left: 300vh;
+      top: 9vh;
+    }
+
+    .bubble_tree {
+      left: 600vh;
+      top: 19vh;
+    }
+
+    .bubble_four {
+      left: 900vh;
+      top: 28vh;
+    }
+
+    .discussion__bubble {
+      border-radius: 12.48px;
+      font-size: .9rem;
+      margin-bottom: 2vh;
+      padding-bottom: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      position: relative;
+      width: 285px;
+
+      @media screen and (max-width: 750px) {
+        font-size: .7rem;
+      }
+
+      &.white {
+        background-color: $white;
+        color: $bubble-text-color;
+        margin-left: 29vh;
+
+        &::after {
+          background: url('../assets/bubbles/bubble-white.svg');
+          bottom: .2vh;
+          content: '';
+          height: 15px;
+          position: absolute;
+          right: -1.3vh;
+          width: 22px;
+        }
+      }
+
+      &.blue {
+        background-color: $bubble-blue-background;
+        color: $white;
+
+        &::after {
+          background: url('../assets/bubbles/bubble-blue.svg');
+          bottom: .2vh;
+          content: '';
+          height: 15px;
+          left: -1.3vh;
+          position: absolute;
+          width: 22px;
+        }
+      }
+    }
+  }
+
+  .background {
+    align-items: center;
+    display: flex;
+
+    .background__sun {
+      height: 15vh;
+      position: absolute;
+      top: 10vh;
+      transform: translate3d(10vh, 0, 0);
+    }
+
+    .background__clouds {
+      height: 34vh;
+      left: 45vh;
+      position: absolute;
+      top: 10vh;
+      transform: translate3d(10vh, 0, 0);
+    }
+
+    .background__colors {
+      height: 100vh;
+    }
+
+    .background__plan1 {
+      bottom: 0;
+      height: 15vh;
+      left: -45vh;
+      position: absolute;
+    }
+
+    .background__plan2 {
+      bottom: 9vh;
+      height: 21.5vh;
+      left: 0;
+      position: absolute;
+      z-index: 2;
+    }
+
+    .background__plan3 {
+      bottom: 19.83vh;
+      height: 30.5vh;
+      left: 0;
+      position: absolute;
+    }
+
+    .background__plan4 {
+      height: 46vh;
+      left: -20px;
+      position: absolute;
+      top: 43.1vh;
+      z-index: 0;
+    }
+
+    .background__plan5 {
+      bottom: 19.83vh;
+      height: 30.5vh;
+      left: 0;
+      position: absolute;
+    }
+
+    .background__mountain--back {
+      align-self: flex-start;
+      height: 72vh;
+      left: 0;
+      margin-left: -94vh;
+      z-index: 1;
+    }
+
+    .background__mountain--front {
+      align-self: flex-start;
+      height: 93vh;
+      margin-left: -86.2vh;
+      margin-top: -.6vh;
+      z-index: 3;
+    }
+
+    .background__snow {
+      animation: snow 10s linear infinite;
+      background: none;
+      background-image:
+      url('../assets/snow/1.png'),
+      url('../assets/snow/2.png');
+      height: 100vh;
+      margin-left: -1000vh;
+      width: 1000vh;
+      z-index: 3;
+    }
+  }
+
+  .section-1 {
+    align-items: center;
+    background: $grey;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin-left: -1vh;
+    width: 6000px;
+    z-index: 3;
+
+    img {
+      height: 60vh;
+    }
+  }
+
+  .section-2 {
+    align-items: center;
+    background: $grey;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin-left: -1vh;
+    width: 6000px;
+    z-index: 3;
+
+    img {
+      height: 50vh;
+    }
+  }
+}
+
+.train {
+  backface-visibility: hidden;
+  bottom: 0;
+  height: 12vh;
+  left: -110vh;
+  margin: auto;
+  position: absolute;
+  top: 46.7vh;
+  transition: transform .03s;
+  z-index: 2;
+
+  path, rect, polygon {
+    transition: fill 300ms ease;
+  }
+}
+
+@keyframes snow {
+  0% {background-position: 0 0, 0 0, 0 0;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}

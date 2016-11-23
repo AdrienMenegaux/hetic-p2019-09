@@ -5,15 +5,19 @@ var autoprefixer = require('autoprefixer');
 
 module.exports = {
   debug: true,
-  entry: {
-    main: './front/js/app.js'
-  },
+  entry: [
+    './front/js/app.js'
+  ],
   output: {
     path: path.join(__dirname, '/public'),
     filename: 'bundle.js'
   },
   module: {
     loaders: [
+      {
+        test: /\.js/,
+        loader: 'imports?define=>false'
+      },
       {
         test: /\.html$/,
         loader: 'html-loader'
@@ -38,8 +42,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'BuddyTrain',
-      template: 'front/templates/home.html'
+      template: 'front/templates/home.html',
     }),
     new ExtractTextPlugin('style.css')
   ],
