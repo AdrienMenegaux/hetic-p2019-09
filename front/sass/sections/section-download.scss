@@ -78,6 +78,7 @@
         height: 40vh;
         justify-content: space-between;
         line-height: $line-height-desktop;
+        width: 30vw;
       }
 
       &__content p {
@@ -91,15 +92,19 @@
       }
 
       &__download {
+        align-items: center;
         display: flex;
         flex-direction: column;
+        height: 15vh;
+        justify-content: space-between;
       }
 
-      &__share {
+      .wrapper__share {
         align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 30vh;
       }
 
       &__store {
