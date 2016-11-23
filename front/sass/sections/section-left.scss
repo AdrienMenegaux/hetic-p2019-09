@@ -22,7 +22,7 @@
 
     &__line {
       background-color: $color-seperator;
-      height: $height-line-mobile;
+      height: $height-separator-mobile;
       margin-left: 5%;
       width: 100%;
     }
@@ -40,7 +40,6 @@
     }
 
     &__content {
-
       font-family: $font-family-sans;
       font-size: $fontsize-mobile-content;
       line-height: $line-height-mobile;
@@ -48,6 +47,7 @@
     }
 
     &__mockup {
+      overflow: hidden;
 
       &--special {
         overflow: hidden;
@@ -123,7 +123,7 @@
       }
 
       &__line {
-        height: $height-line-desktop;
+        height: $height-separator-desktop;
       }
 
       &__container {

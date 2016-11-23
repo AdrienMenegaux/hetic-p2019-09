@@ -56,6 +56,8 @@
 
 .first-section {
   background: $color-body;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .section-end {
@@ -84,25 +86,3 @@
   transition: transform .03s;
   z-index: 1;
 }
-//
-// .mountain-back,
-// .mountain-front {
-//   height: 100vh;
-//   left: -44vh;
-//   position: absolute;
-//   top: 0;
-// }
-//
-// .mountain-front {
-//   z-index: 2;
-// }
-//
-// .informative {
-//   background: #f4f4f4;
-//   height: 100vh;
-//   left: 29052px;
-//   position: absolute;
-//   top: 0;
-//   width: 3000px;
-//   z-index: 1;
-// }

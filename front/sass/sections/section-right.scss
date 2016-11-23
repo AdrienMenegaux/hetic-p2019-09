@@ -8,7 +8,6 @@
     justify-content: space-between;
     width: 90vw;
 
-
     &__separator {
       align-items: center;
       color: $color-seperator;
@@ -22,7 +21,7 @@
 
     &__line {
       background-color: $color-seperator;
-      height: $height-line-mobile;
+      height: $height-separator-mobile;
       margin-left: 5%;
       width: 100%;
     }
@@ -48,11 +47,11 @@
     }
 
     &__mockup {
+      overflow: hidden;
 
       &--special {
-        height: 90vh;
-        margin-bottom: -35vh;
-        overflow: hidden;
+        height: 85vh;
+        margin-bottom: -20vh;
       }
 
       &--standart {
@@ -129,7 +128,7 @@
       }
 
       &__line {
-        height: $height-line-desktop;
+        height: $height-separator-desktop;
       }
 
       &__container {
