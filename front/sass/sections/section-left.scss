@@ -1,4 +1,11 @@
 .section-left {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin-left: -1vh;
+  width: 6000px;
+  z-index: 3;
 
   .wrapper {
     align-items: center;
