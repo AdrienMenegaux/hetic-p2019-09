@@ -1,4 +1,9 @@
+$bubble-text-color: #525252;
+$bubble-blue-background: #80adce;
 $grey: #f4f4f4;
+$text-color: #5f5f5f;
+$time-text-color: #dbdbdb;
+$white: #fff;
 
 .container {
   align-items: center;
@@ -6,89 +11,98 @@ $grey: #f4f4f4;
   width: 80000px;
 
   .notification {
-    display: flex;
-    position: absolute;
-    width: 37vh;
-    height: 10vh;
+    background-color: $white;
     border-radius: 12.48px;
-    background-color: white;
+    display: flex;
+    height: auto;
     left: 344vh;
-    top: 30vh;
+    position: absolute;
+    top: 10vh;
+    width: 350px;
     z-index: 3;
 
     .notification__icon {
-      width: 40%;
       text-align: center;
+      width: 30%;
 
       img {
-        margin-top: -3vh;
+        margin-top: -20px;
+        width: 65px;
       }
     }
 
     .notification__text {
-      width: 60%;
       line-height: 1.2;
-      margin-top: 1vh;
       padding: 10px;
-      padding-top: 0px;
+      padding-left: 0;
+      width: 70%;
 
       .notification__text--time {
-        color: #DBDBDB;
-        margin-bottom: 1vh;
+        color: $time-text-color;
+        font-size: .8rem;
+        margin-bottom: 5px;
       }
 
       .notification__text--content {
-        font-size: 17px;
+        color: $text-color;
+        font-size: 1rem;
       }
     }
   }
 
   .discussion {
     left: 70vh;
-    top: 10vh;
     position: absolute;
+    top: 10vh;
     z-index: 3;
 
+    @media screen and (max-width: 750px) {
+      top: 5vh;
+    }
+
     .discussion__bubble {
-      position: relative;
       border-radius: 12.48px;
-      width: 30vh;
-      padding-top: 20px;
+      font-size: .9rem;
+      margin-bottom: 2vh;
+      padding-bottom: 12px;
       padding-left: 20px;
       padding-right: 20px;
-      padding-bottom: 12px;
-      margin-bottom: 2vh;
+      padding-top: 20px;
+      position: relative;
+      width: 285px;
+
+      @media screen and (max-width: 750px) {
+        font-size: .7rem;
+      }
 
       &.white {
-        background-color: white;
-        color: #525252;
+        background-color: $white;
+        color: $bubble-text-color;
         margin-left: 29vh;
 
         &::after {
-          content: "";
-          color: red;
-          width: 22px;
+          background: url('../assets/bubbles/bubble-white.svg');
+          bottom: .2vh;
+          content: '';
           height: 15px;
-          background: url('../assets/bubble-white.svg');
-          bottom: 0.2vh;
-          right: -1.3vh;
           position: absolute;
+          right: -1.3vh;
+          width: 22px;
         }
       }
 
       &.blue {
-        background-color: #80ADCE;
-        color: #FFFFFF;
+        background-color: $bubble-blue-background;
+        color: $white;
 
         &::after {
-          content: "";
-          color: red;
-          width: 22px;
+          background: url('../assets/bubbles/bubble-blue.svg');
+          bottom: .2vh;
+          content: '';
           height: 15px;
-          background: url('../assets/bubble-blue.svg');
-          bottom: 0.2vh;
           left: -1.3vh;
           position: absolute;
+          width: 22px;
         }
       }
     }
@@ -117,47 +131,47 @@ $grey: #f4f4f4;
     }
 
     .background__plan1 {
-      position: absolute;
       bottom: 0;
-      left: -45vh;
       height: 15vh;
+      left: -45vh;
+      position: absolute;
     }
 
     .background__plan2 {
-      position: absolute;
       bottom: 9vh;
-      z-index: 2;
       height: 21.5vh;
       left: 0;
+      position: absolute;
+      z-index: 2;
     }
 
     .background__plan3 {
-      position: absolute;
       bottom: 19.83vh;
       height: 30.5vh;
       left: 0;
+      position: absolute;
     }
 
     .background__plan4 {
+      height: 46vh;
+      left: -20px;
       position: absolute;
       top: 43.1vh;
-      height: 46vh;
       z-index: 0;
-      left: -20px;
     }
 
     .background__plan5 {
-      position: absolute;
       bottom: 19.83vh;
       height: 30.5vh;
       left: 0;
+      position: absolute;
     }
 
     .background__mountain--back {
       align-self: flex-start;
       height: 72vh;
-      margin-left: -94vh;
       left: 0;
+      margin-left: -94vh;
       z-index: 1;
     }
 
@@ -215,10 +229,6 @@ $grey: #f4f4f4;
 }
 
 .train {
-  path, rect, polygon {
-    transition: fill 300ms ease;
-  }
-
   backface-visibility: hidden;
   bottom: 0;
   height: 12vh;
@@ -228,10 +238,14 @@ $grey: #f4f4f4;
   top: 46.7vh;
   transition: transform .03s;
   z-index: 2;
+
+  path, rect, polygon {
+    transition: fill 300ms ease;
+  }
 }
 
 @keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  0% {background-position: 0 0, 0 0, 0 0;}
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
