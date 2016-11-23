@@ -1,7 +1,7 @@
 .container {
   align-items: center;
   display: flex;
-  width: 80000px;
+  width: 4480vh;;
 }
 
 .intro {
@@ -240,6 +240,14 @@
   }
 }
 
+.gradient {
+  background-image: $color-body;
+  height: 100vh;
+  margin-left: -1vh;
+  overflow: hidden;
+  width: 50vh;
+  z-index: 2;
+}
 .train {
   backface-visibility: hidden;
   bottom: 0;
