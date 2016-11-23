@@ -10,6 +10,34 @@ $white: #fff;
   display: flex;
   width: 80000px;
 
+  .menu {
+    margin-left: 5vh;
+    position: fixed;
+    top: 5vh;
+
+    &.black {
+      ul {
+        li {
+          color: $text-color;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        color: white;
+        display: inline;
+        margin-right: 20px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
   .notification {
     background-color: $white;
     border-radius: 12.48px;
@@ -204,8 +232,7 @@ $white: #fff;
       background: none;
       background-image:
       url('../assets/snow/1.png'),
-      url('../assets/snow/2.png'),
-      url('../assets/snow/3.png');
+      url('../assets/snow/2.png');
       height: 100vh;
       margin-left: -1000vh;
       width: 1000vh;
