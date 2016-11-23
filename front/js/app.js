@@ -23,9 +23,9 @@ const BubbleFourAnimationDuration = browserHeight * 3.3;
 const SectionAnimationDuration = browserHeight * 1.2;
 
 // Reload all Data when browserHeight change
-window.onresize = function () {
-  location.reload();
-};
+// window.onresize = function () {
+//   location.reload();
+// };
 
 // Create the Train Animation
 const TrainElement = TweenMax.to(
