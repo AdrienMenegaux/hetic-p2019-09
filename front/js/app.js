@@ -5,23 +5,9 @@ import TweenMax from 'gsap';
 
 require('../sass/main.scss');
 
-document.querySelector('body').onmousewheel = function (event) {
-  const delta=event.detail? event.detail*(-120) : event.wheelDelta; this.scrollLeft -= delta;
-}
-
-// Color train windows
-function NightModeTrigger()
-{
-  const windows = document.querySelectorAll('#window');
-  for (var i = 0; i < windows.length; i++) {
-    (function(i){
-      setTimeout(function(){
-        windows[i].style.fill = "#fef3d7";
-      }, Math.random() * 3000);
-    })(i);
-  }
-}
-// NightModeTrigger();
+// document.querySelector('body').onmousewheel = function (event) {
+//   const delta=event.detail? event.detail*(-20) : event.wheelDelta; this.scrollLeft -= delta;
+// }
 
 
 // Init ScrollMagic Controller
@@ -35,6 +21,11 @@ const browserHeight = window.innerHeight;
 // Convert the duration for the Elements Animation
 const TrainAnimationDuration = browserHeight * 31.1;
 const SunAnimationDuration = browserHeight * 20;
+const NotificationAnimationDuration = browserHeight * 2;
+const BubbleOneAnimationDuration = browserHeight * 12.5;
+const BubbleTwoAnimationDuration = browserHeight * 10;
+const BubbleTreeAnimationDuration = browserHeight * 6.5;
+const BubbleFourAnimationDuration = browserHeight * 4;
 
 // Reload all Data when browserHeight change
 window.onresize = function () {
@@ -85,6 +76,7 @@ const FrontHouses = TweenMax.to(
     transition: 'all 100ms',
   }
 );
+
 
 // Build the Train Scene
 const TrainScene = new ScrollMagic.Scene({
@@ -152,12 +144,61 @@ const Snow = new ScrollMagic.Scene({
 // Build the Notification Scene
 const NotificationScene = new ScrollMagic.Scene({
   triggerElement: '.notification',
-  duration: '3500vh',
+  duration: NotificationAnimationDuration,
+  offset: document.querySelector('.notification').offsetWidth / 2,
 })
   .setPin('.notification')
   .addIndicators({
     name: 'Notification',
   });
+
+// Build the Bubble One Scene
+const BubbleSceneOne = new ScrollMagic.Scene({
+  triggerElement: '.bubble_one',
+  duration: BubbleOneAnimationDuration,
+  offset: document.querySelector('.bubble_one').offsetWidth / 2,
+})
+  .setPin('.bubble_one')
+  .addIndicators({
+    name: 'Bubble 1',
+  });
+
+// Build the Bubble Two Scene
+const BubbleSceneTwo = new ScrollMagic.Scene({
+  triggerElement: '.bubble_two',
+  triggerHook: 0.25,
+  duration: BubbleTwoAnimationDuration,
+})
+  .setPin('.bubble_two')
+  .addIndicators({
+    name: 'Bubble 2',
+  });
+
+// Build the Bubble Tree Scene
+const BubbleSceneTree = new ScrollMagic.Scene({
+  triggerElement: '.bubble_tree',
+  duration: BubbleTreeAnimationDuration,
+  offset: document.querySelector('.bubble_tree').offsetWidth / 2,
+})
+  .on('start', function () {
+    console.log('%c En fait, ils vont dans les toilettes ... 😱 🍑 ', 'color: #bada55');
+  })
+  .setPin('.bubble_tree')
+  .addIndicators({
+    name: 'Bubble 3',
+  });
+
+// Build the Bubble Four Scene
+const BubbleSceneFour = new ScrollMagic.Scene({
+  triggerElement: '.bubble_four',
+  triggerHook: 0.25,
+  duration: BubbleFourAnimationDuration,
+})
+  .setPin('.bubble_four')
+  .addIndicators({
+    name: 'Bubble 4',
+  });
+
 
 // Build the Scene One Scene
 const SectionOneScene = new ScrollMagic.Scene({
@@ -187,12 +228,21 @@ const SectionTwoScene = new ScrollMagic.Scene({
 // Add All Scenes to Controller
 controller.addScene([
   TrainScene,
+
   SunScene,
   CloudsScene,
+
   Snow,
   BackMoutainScene,
   FrontHousesScene,
+
   NotificationScene,
+
+  BubbleSceneOne,
+  BubbleSceneTwo,
+  BubbleSceneTree,
+  BubbleSceneFour,
+
   SectionOneScene,
   SectionTwoScene,
 ]);

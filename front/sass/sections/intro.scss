@@ -17,7 +17,7 @@ $white: #fff;
     height: auto;
     left: 344vh;
     position: absolute;
-    top: 10vh;
+    top: 30vh;
     width: 350px;
     z-index: 3;
 
@@ -51,13 +51,28 @@ $white: #fff;
   }
 
   .discussion {
-    left: 70vh;
+    left: 658vh;
     position: absolute;
     top: 10vh;
     z-index: 3;
 
     @media screen and (max-width: 750px) {
       top: 5vh;
+    }
+
+    .bubble_two {
+      left: 300vh;
+      top: 9vh;
+    }
+
+    .bubble_tree {
+      left: 600vh;
+      top: 19vh;
+    }
+
+    .bubble_four {
+      left: 900vh;
+      top: 28vh;
     }
 
     .discussion__bubble {
