@@ -88,14 +88,22 @@ const FrontHousesScene = new ScrollMagic.Scene({
 const NightMode = new ScrollMagic.Scene({
   triggetElement: '.background__snow',
   triggerHook: 0.75,
-  duration: 2000,
+  duration: '1000',
   // offset: '50%',
 })
-  .on('start', function()
-  {
-    NightModeTrigger();
-  })
+  .on('start', function() {NightModeTrigger();})
   .addIndicators();
+
+// Build the Notification Scene
+const NotificationScene = new ScrollMagic.Scene({
+  triggerElement: '.notification',
+  pushFollowers: true,
+  duration: '3500vh',
+})
+  .setPin('.notification')
+  .addIndicators({
+    name: 'Notification',
+  });
 
 // Build the Scene One Scene
 const SectionOneScene = new ScrollMagic.Scene({
@@ -123,6 +131,7 @@ controller.addScene([
   TrainScene,
   BackMoutainScene,
   FrontHousesScene,
+  NotificationScene,
   NightMode,
   SectionOneScene,
   SectionTwoScene,
