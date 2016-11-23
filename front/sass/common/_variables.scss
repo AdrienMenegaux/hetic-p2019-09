@@ -1,0 +1,28 @@
+// --- Variables ---
+// - Colors
+// - Typography
+// - Elements size
+
+// Base colors
+// $color-body:        #f5f4f5;
+$color-body:        linear-gradient(left, #f5f4f5 0%, #ffffff 25%);
+$color-body-white:  #fff;
+$color-seperator:   #e7e7e7;
+$color-title-red:   #ce8080;
+$color-title-green: #80cec4;
+$color-link:        #414141;
+
+
+// Base typography
+$fontsize-mobile-separator:  16px;
+$fontsize-mobile-title:      18px;
+$fontsize-mobile-content:    14px;
+$fontsize-desktop-separator: 28px;
+$fontsize-desktop-title:     24px;
+$fontsize-desktop-content:   20px;
+$line-height-mobile:         15px;
+$line-height-desktop:        30px;
+
+// Elements size
+$height-separator-mobile:  2px;
+$height-separator-desktop: 3px;

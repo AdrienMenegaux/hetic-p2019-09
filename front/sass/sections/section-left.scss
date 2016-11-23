@@ -1,0 +1,149 @@
+.section-left {
+
+  .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: space-between;
+    width: 90vw;
+
+
+    &__separator {
+      align-items: center;
+      color: $color-seperator;
+      display: flex;
+      font-family: $font-family-separator;
+      font-size: $fontsize-mobile-separator;
+      font-style: italic;
+      font-weight: bold;
+      margin-bottom: 5%;
+    }
+
+    &__line {
+      background-color: $color-seperator;
+      height: $height-separator-mobile;
+      margin-left: 5%;
+      width: 100%;
+    }
+
+    &__title {
+      font-family: $font-family-sans;
+      font-size: $fontsize-mobile-title;
+      font-weight: bold;
+      margin-bottom: 5vh;
+      text-align: left;
+    }
+
+    &__content {
+      font-family: $font-family-sans;
+      font-size: $fontsize-mobile-content;
+      line-height: $line-height-mobile;
+      text-align: left;
+    }
+
+    &__mockup {
+      overflow: hidden;
+
+      &--special {
+        overflow: hidden;
+        width: 90vw;
+      }
+
+      &--standart {
+        height:  40vh;
+      }
+    }
+
+    &__title--red {
+      color: $color-title-red;
+    }
+
+    &__title--green {
+      color: $color-title-green;
+    }
+
+    &__content p {
+      padding-bottom: 5%;
+    }
+  }
+}
+
+// --- section left ---
+@media  (max-width: 680px ) and (orientation: landscape) {
+
+  .section-left {
+
+    .wrapper {
+      flex-direction: row;
+      width: 90vw;
+
+      &__mockup--special {
+        width: inherit;
+      }
+
+      &__mockup--standart {
+        height: 60vh;
+      }
+
+      &__container {
+        width: 40vw;
+      }
+    }
+  }
+}
+@media (min-width: 680px) and (max-width: 999px) {
+ .wrapper{
+    &__container {
+    width: 50vw;
+   }
+  }
+}
+@media (min-width: 1000px) {
+
+  // --- Mockup 01 ---
+  .section-left {
+
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 10px;
+      width: 80vw;
+
+      &__mockup {
+        margin: auto;
+
+        &--special {
+          width: 30vw;
+        }
+
+        &--standart {
+          height: 50vh;
+        }
+      }
+
+      &__line {
+        height: $height-separator-desktop;
+      }
+
+      &__container {
+        width: 30vw;
+      }
+
+      &__separator {
+        font-size: $fontsize-desktop-separator;
+      }
+
+      &__title {
+        font-size: $fontsize-desktop-title;
+      }
+
+      &__content {
+        font-size: $fontsize-desktop-content;
+        line-height: $line-height-desktop;
+        width: 30vw;
+      }
+    }
+  }
+}
