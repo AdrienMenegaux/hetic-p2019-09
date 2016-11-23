@@ -75,14 +75,18 @@ const BackMoutainScene = new ScrollMagic.Scene({
   duration: TrainAnimationDuration,
 })
   .setTween(BackMountain)
-  .addIndicators();
+  .addIndicators({
+    name: 'Back Moutain',
+  });
 
 // Build the Train Scene
 const FrontHousesScene = new ScrollMagic.Scene({
   duration: TrainAnimationDuration,
 })
   .setTween(FrontHouses)
-  .addIndicators();
+  .addIndicators({
+    name: 'Front House',
+  });
 
 // Night mode
 const NightMode = new ScrollMagic.Scene({
@@ -92,7 +96,9 @@ const NightMode = new ScrollMagic.Scene({
   // offset: '50%',
 })
   .on('start', function() {NightModeTrigger();})
-  .addIndicators();
+  .addIndicators({
+    name: 'NightMode',
+  });
 
 // Build the Notification Scene
 const NotificationScene = new ScrollMagic.Scene({
@@ -113,7 +119,9 @@ const SectionOneScene = new ScrollMagic.Scene({
   offset: '50%',
 })
   .setPin('.section-1-img')
-  .addIndicators();
+  .addIndicators({
+    name: 'Section One',
+  });
 
 // Build the Scene Two Scene
 const SectionTwoScene = new ScrollMagic.Scene({
@@ -123,7 +131,9 @@ const SectionTwoScene = new ScrollMagic.Scene({
   offset: '50%',
 })
   .setPin('.section-2-img')
-  .addIndicators();
+  .addIndicators({
+    name: 'Section Two',
+  });
 
 
 // Add All Scenes to Controller
