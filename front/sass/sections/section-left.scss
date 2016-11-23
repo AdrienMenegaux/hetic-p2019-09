@@ -1,5 +1,6 @@
-.section-left{
-    .wrapper {
+.section-left {
+
+  .wrapper {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -49,6 +50,7 @@
     &__mockup {
 
       &--special {
+        overflow: hidden;
         width: 90vw;
       }
 
@@ -71,16 +73,25 @@
   }
 }
 
-// --- section 1 ---
+// --- section left ---
 @media  (max-width: 670px ) and (orientation: landscape) {
 
-    .section-left {
+  .section-left {
 
-      .wrapper {
+    .wrapper {
       flex-direction: row;
+      width: 90vw;
+
+      &__mockup--special {
+        width: inherit;
+      }
+
+      &__mockup--standart {
+        height: 60vh;
+      }
 
       &__container {
-        width : 50vw;
+        width: 40vw;
       }
     }
   }
@@ -90,9 +101,9 @@
 
 
   // --- Mockup 01 ---
-    .section-left {
-      
-      .wrapper {
+  .section-left {
+
+    .wrapper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -100,18 +111,15 @@
       width: 80vw;
 
       &__mockup {
+        margin: auto;
 
         &--special {
-          width: 50vw;
+          width: 30vw;
         }
 
         &--standart {
           height: 50vh;
         }
-      }
-
-      &__mockup {
-        margin: auto;
       }
 
       &__line {
@@ -133,6 +141,7 @@
       &__content {
         font-size: $fontsize-desktop-content;
         line-height: $line-height-desktop;
+        width: 30vw;
       }
     }
   }
