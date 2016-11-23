@@ -67,65 +67,94 @@
   position: absolute;
   top: 10vh;
   z-index: 3;
-  @media screen and (max-width: 750px) {
+
+  @media screen and (max-width: 400px) {
+    top: 5vh;
+  }
+
+  @media screen and (max-width: 750px) and (orientation: landscape) {
     top: 5vh;
   }
 
   .bubble_two {
     left: 300vh;
     top: 9vh;
+
+    @media screen and (max-width: 400px) {
+      top: 10vh;
+    }
+
+    @media screen and (max-width: 750px) and (orientation: landscape) {
+      top: 17vh;
+    }
   }
 
   .bubble_tree {
     left: 600vh;
     top: 19vh;
+
+    @media screen and (max-width: 400px) {
+      top: 20vh;
+    }
+
+    @media screen and (max-width: 750px) and (orientation: landscape) {
+      top: 34vh;
+    }
   }
 
   .bubble_four {
     left: 900vh;
     top: 28vh;
+
+    @media screen and (max-width: 400px) {
+      top: 28vh;
+    }
+
+    @media screen and (max-width: 750px) and (orientation: landscape) {
+      top: 48vh;
+    }
+  }
+}
+
+.discussion__bubble {
+  border-radius: 12.48px;
+  font-size: .9rem;
+  margin-bottom: 2vh;
+  padding: 20px 20px 12px;
+  position: relative;
+  width: 285px;
+  @media screen and (max-width: 750px) {
+    font-size: .7rem;
   }
 
-  .discussion__bubble {
-    border-radius: 12.48px;
-    font-size: .9rem;
-    margin-bottom: 2vh;
-    padding: 20px 20px 12px;
-    position: relative;
-    width: 285px;
-    @media screen and (max-width: 750px) {
-      font-size: .7rem;
+  &.white {
+    background-color: $white;
+    color: $bubble-text-color;
+    margin-left: 29vh;
+
+    &::after {
+      background: url('../assets/bubbles/bubble-white.svg');
+      bottom: .2vh;
+      content: '';
+      height: 15px;
+      position: absolute;
+      right: -1.3vh;
+      width: 22px;
     }
+  }
 
-    &.white {
-      background-color: $white;
-      color: $bubble-text-color;
-      margin-left: 29vh;
+  &.blue {
+    background-color: $bubble-blue-background;
+    color: $white;
 
-      &::after {
-        background: url('../assets/bubbles/bubble-white.svg');
-        bottom: .2vh;
-        content: '';
-        height: 15px;
-        position: absolute;
-        right: -1.3vh;
-        width: 22px;
-      }
-    }
-
-    &.blue {
-      background-color: $bubble-blue-background;
-      color: $white;
-
-      &::after {
-        background: url('../assets/bubbles/bubble-blue.svg');
-        bottom: .2vh;
-        content: '';
-        height: 15px;
-        left: -1.3vh;
-        position: absolute;
-        width: 22px;
-      }
+    &::after {
+      background: url('../assets/bubbles/bubble-blue.svg');
+      bottom: .2vh;
+      content: '';
+      height: 15px;
+      left: -1.3vh;
+      position: absolute;
+      width: 22px;
     }
   }
 }
