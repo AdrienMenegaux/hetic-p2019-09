@@ -2,14 +2,16 @@
 // - Colors
 // - Typography
 // - Elements size
-// - Responsive
 
 // Base colors
-$color-body:        #f5f4f5;
+// $color-body:        #f5f4f5;
+$color-body:        linear-gradient(left, #f5f4f5 0%, #ffffff 25%);
+$color-body-white:  #fff;
 $color-seperator:   #e7e7e7;
 $color-title-red:   #ce8080;
 $color-title-green: #80cec4;
 $color-link:        #414141;
+
 
 // Base typography
 $fontsize-mobile-separator:  16px;
@@ -24,20 +26,3 @@ $line-height-desktop:        30px;
 // Elements size
 $height-line-mobile:  2px;
 $height-line-desktop: 3px;
-
-// Mixins
-$landscape-max-width: 670px;
-$mobile-orientation:  landscape;
-$desktop-min-width:   750px;
-
-@mixin landscape {
-  @media (max-width: #{$landscape-max-width}) and (orientation: #{$mobile-orientation}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-min-width}) {
-    @content;
-  }
-}

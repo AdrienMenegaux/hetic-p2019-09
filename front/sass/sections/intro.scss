@@ -1,5 +1,3 @@
-$grey: #f4f4f4;
-
 .container {
   align-items: center;
   display: flex;
@@ -26,7 +24,7 @@ $grey: #f4f4f4;
 
 .section-left {
   align-items: center;
-  background: $grey;
+  background: $color-body-white;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -39,9 +37,10 @@ $grey: #f4f4f4;
   }
 }
 
+
 .section-right {
   align-items: center;
-  background: $grey;
+  background: $color-body-white;
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -49,14 +48,19 @@ $grey: #f4f4f4;
   width: 6000px;
   z-index: 1;
 
+
   img {
     height: 25vh;
   }
 }
 
+.first-section {
+  background: $color-body;
+}
+
 .section-end {
   align-items: center;
-  background: $grey;
+  background: $color-body-white;
   display: flex;
   height: 100vh;
   justify-content: center;
