@@ -5,21 +5,6 @@ import TweenMax from 'gsap';
 
 require('../sass/main.scss');
 
-// Color train windows
-function NightModeTrigger()
-{
-  const windows = document.querySelectorAll('#window');
-  for (var i = 0; i < windows.length; i++) {
-    (function(i){
-      setTimeout(function(){
-        windows[i].style.fill = "#fef3d7";
-      }, Math.random() * 3000);
-    })(i);
-  }
-}
-// NightModeTrigger();
-
-
 // Init ScrollMagic Controller
 const controller = new ScrollMagic.Controller({
   vertical: false,
@@ -88,22 +73,29 @@ const FrontHousesScene = new ScrollMagic.Scene({
     name: 'Front House',
   });
 
-// Night mode
-const NightMode = new ScrollMagic.Scene({
-  triggetElement: '.background__snow',
-  triggerHook: 0.75,
-  duration: '1000',
-  // offset: '50%',
+
+// Build the Notification Scene
+const Snow = new ScrollMagic.Scene({
+  triggerElement: '.background__snow',
+  offset: '-500vh',
 })
-  .on('start', function() {NightModeTrigger();})
+  .on('start', function () {
+    const windows = document.querySelectorAll('#window');
+    for (let i = 0; i < windows.length; i += 1) {
+      (function (i) {
+        setTimeout(function () {
+          windows[i].style.fill = '#fef3d7';
+        }, Math.random() * 500);
+      })(i);
+    }
+  })
   .addIndicators({
-    name: 'NightMode',
+    name: 'Mountain',
   });
 
 // Build the Notification Scene
 const NotificationScene = new ScrollMagic.Scene({
   triggerElement: '.notification',
-  pushFollowers: true,
   duration: '3500vh',
 })
   .setPin('.notification')
@@ -139,10 +131,10 @@ const SectionTwoScene = new ScrollMagic.Scene({
 // Add All Scenes to Controller
 controller.addScene([
   TrainScene,
+  Snow,
   BackMoutainScene,
   FrontHousesScene,
   NotificationScene,
-  NightMode,
   SectionOneScene,
   SectionTwoScene,
 ]);
