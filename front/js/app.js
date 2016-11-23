@@ -5,11 +5,6 @@ import TweenMax from 'gsap';
 
 require('../sass/main.scss');
 
-// document.querySelector('body').onmousewheel = function (event) {
-//   const delta=event.detail? event.detail*(-20) : event.wheelDelta; this.scrollLeft -= delta;
-// }
-
-
 // Init ScrollMagic Controller
 const controller = new ScrollMagic.Controller({
   vertical: false,
@@ -23,9 +18,9 @@ const TrainAnimationDuration = browserHeight * 31.1;
 const SunAnimationDuration = browserHeight * 20;
 const NotificationAnimationDuration = browserHeight * 2;
 const BubbleOneAnimationDuration = browserHeight * 12.5;
-const BubbleTwoAnimationDuration = browserHeight * 10;
+const BubbleTwoAnimationDuration = browserHeight * 9.42;
 const BubbleTreeAnimationDuration = browserHeight * 6.5;
-const BubbleFourAnimationDuration = browserHeight * 4;
+const BubbleFourAnimationDuration = browserHeight * 3.3;
 
 // Reload all Data when browserHeight change
 window.onresize = function () {
@@ -181,7 +176,7 @@ const BubbleSceneTree = new ScrollMagic.Scene({
   offset: document.querySelector('.bubble_tree').offsetWidth / 2,
 })
   .on('start', function () {
-    console.log('%c En fait, ils vont dans les toilettes ... 😱 🍑 ', 'color: #bada55');
+    console.log('%c En fait, ils vont dans les toilettes ... 😱 🍑 ', 'color: red');
   })
   .setPin('.bubble_tree')
   .addIndicators({
