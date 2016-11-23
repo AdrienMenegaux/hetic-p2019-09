@@ -125,7 +125,7 @@ const FrontHousesScene = new ScrollMagic.Scene({
 // Build the Notification Scene
 const Snow = new ScrollMagic.Scene({
   triggerElement: '.background__snow',
-  offset: '-500vh',
+  offset: -500,
 })
   .on('start', function () {
     const windows = document.querySelectorAll('#window');
@@ -181,7 +181,7 @@ const BubbleSceneTree = new ScrollMagic.Scene({
   offset: document.querySelector('.bubble_tree').offsetWidth / 2,
 })
   .on('start', function () {
-    console.log('%c En fait, ils vont dans les toilettes ... 😱 🍑 ', 'color: #bada55');
+    console.log('%c En fait, ils vont dans les toilettes ... 😱 🍑 ', 'color: red');
   })
   .setPin('.bubble_tree')
   .addIndicators({
