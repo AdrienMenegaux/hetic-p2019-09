@@ -21,6 +21,7 @@ const BubbleOneAnimationDuration = browserHeight * 12.5;
 const BubbleTwoAnimationDuration = browserHeight * 9.42;
 const BubbleTreeAnimationDuration = browserHeight * 6.5;
 const BubbleFourAnimationDuration = browserHeight * 3.3;
+const SectionAnimationDuration = browserHeight * 1.2;
 
 // Reload all Data when browserHeight change
 window.onresize = function () {
@@ -194,29 +195,48 @@ const BubbleSceneFour = new ScrollMagic.Scene({
     name: 'Bubble 4',
   });
 
-
-// Build the Scene One Scene
+// Animation for Section 1
 const SectionOneScene = new ScrollMagic.Scene({
-  triggerElement: '.section-1-img',
-  triggerHook: 0.25,
-  duration: 2000,
-  offset: '50%',
+  triggerElement: '.sectionOne',
+  offset: document.querySelector('.sectionOne').offsetWidth / 2,
+  duration: SectionAnimationDuration,
 })
-  .setPin('.section-1-img')
+  .setPin('.sectionOne')
   .addIndicators({
-    name: 'Section One',
+    name: 'Section 1',
   });
 
-// Build the Scene Two Scene
+// Animation for Section 2
 const SectionTwoScene = new ScrollMagic.Scene({
-  triggerElement: '.section-2-img',
-  triggerHook: 0.25,
-  duration: 2000,
-  offset: '50%',
+  triggerElement: '.sectionTwo',
+  offset: document.querySelector('.sectionTwo').offsetWidth / 2,
+  duration: SectionAnimationDuration,
 })
-  .setPin('.section-2-img')
+  .setPin('.sectionTwo')
   .addIndicators({
-    name: 'Section Two',
+    name: 'Section 2',
+  });
+
+// Animation for Section 3
+const SectionTreeScene = new ScrollMagic.Scene({
+  triggerElement: '.sectionTree',
+  offset: document.querySelector('.sectionTree').offsetWidth / 2,
+  duration: SectionAnimationDuration,
+})
+  .setPin('.sectionTree')
+  .addIndicators({
+    name: 'Section 3',
+  });
+
+// Animation for Section 4
+const SectionFourScene = new ScrollMagic.Scene({
+  triggerElement: '.sectionFour',
+  offset: document.querySelector('.sectionFour').offsetWidth / 2,
+  duration: SectionAnimationDuration,
+})
+  .setPin('.sectionFour')
+  .addIndicators({
+    name: 'Section 4',
   });
 
 
@@ -240,4 +260,6 @@ controller.addScene([
 
   SectionOneScene,
   SectionTwoScene,
+  SectionTreeScene,
+  SectionFourScene,
 ]);
