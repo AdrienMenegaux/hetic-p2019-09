@@ -23,9 +23,9 @@ const TrainAnimationDuration = browserHeight * 31.1;
 const SunAnimationDuration = browserHeight * 20;
 const NotificationAnimationDuration = browserHeight * 2;
 const BubbleOneAnimationDuration = browserHeight * 12.5;
-const BubbleTwoAnimationDuration = browserHeight * 10;
+const BubbleTwoAnimationDuration = browserHeight * 9.42;
 const BubbleTreeAnimationDuration = browserHeight * 6.5;
-const BubbleFourAnimationDuration = browserHeight * 4;
+const BubbleFourAnimationDuration = browserHeight * 3.3;
 
 // Reload all Data when browserHeight change
 window.onresize = function () {
@@ -121,9 +121,8 @@ const FrontHousesScene = new ScrollMagic.Scene({
     name: 'Front House',
   });
 
-
 // Build the Notification Scene
-const Snow = new ScrollMagic.Scene({
+const TrainLights = new ScrollMagic.Scene({
   triggerElement: '.background__snow',
   offset: -500,
 })
@@ -138,7 +137,7 @@ const Snow = new ScrollMagic.Scene({
     }
   })
   .addIndicators({
-    name: 'Mountain',
+    name: 'TrainLights',
   });
 
 // Build the Notification Scene
@@ -228,11 +227,11 @@ const SectionTwoScene = new ScrollMagic.Scene({
 // Add All Scenes to Controller
 controller.addScene([
   TrainScene,
+  TrainLights,
 
   SunScene,
   CloudsScene,
 
-  Snow,
   BackMoutainScene,
   FrontHousesScene,
 

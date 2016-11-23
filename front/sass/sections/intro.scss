@@ -241,6 +241,7 @@ $white: #fff;
     }
 
     .background__snow {
+      animation-play-state: paused;
       animation: snow 10s linear infinite;
       background: none;
       background-image:
