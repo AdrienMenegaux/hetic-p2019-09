@@ -112,11 +112,11 @@ $white: #fff;
     align-items: center;
     display: flex;
 
-    .background__sunandclouds {
-      height: 45vh;
-      left: 10vh;
+    .background__sun {
+      height: 15vh;
       position: absolute;
-      top: 6vh;
+      top: 10vh;
+      transform: translate3d(10vh, 0, 0);
     }
 
     .background__colors {
@@ -180,9 +180,9 @@ $white: #fff;
       animation: snow 10s linear infinite;
       background: none;
       background-image:
-      url('http://www.wearewebstars.dk/codepen/img/s1.png'),
-      url('http://www.wearewebstars.dk/codepen/img//s2.png'),
-      url('http://www.wearewebstars.dk/codepen/img//s3.png');
+      url('../assets/snow/1.png'),
+      url('../assets/snow/2.png'),
+      url('../assets/snow/3.png');
       height: 100vh;
       margin-left: -1000vh;
       width: 1000vh;

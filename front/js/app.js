@@ -5,21 +5,6 @@ import TweenMax from 'gsap';
 
 require('../sass/main.scss');
 
-// Color train windows
-function NightModeTrigger()
-{
-  const windows = document.querySelectorAll('#window');
-  for (var i = 0; i < windows.length; i++) {
-    (function(i){
-      setTimeout(function(){
-        windows[i].style.fill = "#fef3d7";
-      }, Math.random() * 3000);
-    })(i);
-  }
-}
-// NightModeTrigger();
-
-
 // Init ScrollMagic Controller
 const controller = new ScrollMagic.Controller({
   vertical: false,
@@ -28,8 +13,9 @@ const controller = new ScrollMagic.Controller({
 // Get Height of Browser
 const browserHeight = window.innerHeight;
 
-// Convert the duration for Train Animation
+// Convert the duration for the Elements Animation
 const TrainAnimationDuration = browserHeight * 31.1;
+const SunAnimationDuration = browserHeight * 20;
 
 // Reload all Data when browserHeight change
 window.onresize = function () {
@@ -40,6 +26,15 @@ window.onresize = function () {
 const TrainElement = TweenMax.to(
   '.train', 1, {
     transform: 'translate3d(3290vh,0,0)',
+    ease: Linear.easeNone,
+    transition: 'all 100ms',
+  }
+);
+
+// Create the Sun Animation
+const Sun = TweenMax.to(
+  '.background__sun', 1, {
+    transform: 'translate3d(2150vh,50vh,0)',
     ease: Linear.easeNone,
     transition: 'all 100ms',
   }
@@ -70,7 +65,16 @@ const TrainScene = new ScrollMagic.Scene({
   .setTween(TrainElement)
   .addIndicators();
 
-// Build the Train Scene
+// Build the Sun Scene
+const SunScene = new ScrollMagic.Scene({
+  duration: SunAnimationDuration,
+})
+  .setTween(Sun)
+  .addIndicators({
+    name: 'Sun',
+  });
+
+// Build the BackMountain Scene
 const BackMoutainScene = new ScrollMagic.Scene({
   duration: TrainAnimationDuration,
 })
@@ -79,7 +83,7 @@ const BackMoutainScene = new ScrollMagic.Scene({
     name: 'Back Moutain',
   });
 
-// Build the Train Scene
+// Build the FrontHouse Scene
 const FrontHousesScene = new ScrollMagic.Scene({
   duration: TrainAnimationDuration,
 })
@@ -88,23 +92,29 @@ const FrontHousesScene = new ScrollMagic.Scene({
     name: 'Front House',
   });
 
-// Night mode
-const NightMode = new ScrollMagic.Scene({
-  triggetElement: '.background__snow',
-  triggerHook: 0.75,
-  duration: '1000',
-  // offset: '50%',
+
+// Build the Notification Scene
+const Snow = new ScrollMagic.Scene({
+  triggerElement: '.background__snow',
+  offset: '-500vh',
 })
-  .on('start', function() {NightModeTrigger();})
+  .on('start', function () {
+    const windows = document.querySelectorAll('#window');
+    for (let i = 0; i < windows.length; i += 1) {
+      (function (i) {
+        setTimeout(function () {
+          windows[i].style.fill = '#fef3d7';
+        }, Math.random() * 500);
+      })(i);
+    }
+  })
   .addIndicators({
-    name: 'NightMode',
+    name: 'Mountain',
   });
 
 // Build the Notification Scene
 const NotificationScene = new ScrollMagic.Scene({
   triggerElement: '.notification',
-  pushFollowers: true,
-  triggerHook: 0.25,
   duration: '3500vh',
 })
   .setPin('.notification')
@@ -140,10 +150,11 @@ const SectionTwoScene = new ScrollMagic.Scene({
 // Add All Scenes to Controller
 controller.addScene([
   TrainScene,
+  SunScene,
+  Snow,
   BackMoutainScene,
   FrontHousesScene,
   NotificationScene,
-  NightMode,
   SectionOneScene,
   SectionTwoScene,
 ]);
